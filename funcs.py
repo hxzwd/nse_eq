@@ -84,6 +84,30 @@ def f_extract_from_eq_sys_(eq_sys, param_list, eq_num_list):
 	return param_res_d
 
 
+def f_line_up_one_param(eq, not_include = [ ]):
+		f_symb = eq.lhs.free_symbols
+		a_symb = [ i for i in f_symb if "a" == i.name[0] and i not in not_include ]
+		pass
+		d_ = dict([ [ i, sp.degree(eq, i) ] for i in a_symb ])
+		line_up_param = min(d_, key = lambda x : d_[x])
+		d_min_ = [ ]
+		for key in d_.keys():
+				if d_[key] == d_[line_up_param]:
+						d_min_.append(key)
+		line_up_param = min(d_min_, key = lambda x : int(x.name[1:]))
+		return { "f_symb" : f_symb, "a_symb" : a_symb, "d_" : d_, "d_min_" : d_min_, "line_up_param" : line_up_param }
+
+
+def f_line_up_params(eqs):
+		pass
+		line_up_params_list = [ ]
+		new_eqs = eqs[ 1 : -1 ]
+		for eq in new_eqs:
+				tmp_ = f_line_up_one_param(eq, not_include = line_up_params_list)
+				line_up_params_list.append(tmp_["line_up_param"])
+		return [ Symbol("b") ] + line_up_params_list + [ Symbol("omega") ]
+
+
 
 print_hello_msg()
 
@@ -110,6 +134,45 @@ def f_gen_target_eq(n):
 		key = "a{}".format(index)
 		target_eq += coeff_list[key] * value * ( I if (index % 2 == 1) else 1 )
 	return { "target_eq" : target_eq, "params" : coeff_list, "q" : q, "y" : y, "x" : x, "t" : t, "q_der_list" : q_der_list, "n" : n }
+
+
+def f_subs_trav_wave_old(target_eq = None, params = { }, q = None, y = None, x = None, t = None, q_der_list = [ ], n = None):
+	C0 = Symbol("C0")
+	k = Symbol("k")
+	omega = Symbol("omega")
+	b = Symbol("b")
+	z = Symbol("z")
+	tmpp = [ "C0", "k", "omega", "b", "z" ]
+	res_d = dict(zip(tmpp, map(eval, tmpp)))
+	subs_fun = y(x - C0 * t) * exp( I * ( k * x - omega * t ) )
+	res_d["subs_fun"] = subs_fun
+	tmp1 = target_eq.subs({ q(x, t) : subs_fun }).doit().simplify().doit().expand().subs({ x - C0 * t : x }).doit()
+	res_d["tmp1"] = tmp1
+	tmp2 = tmp1.subs({ exp(I*k*x) : 1, exp(-I*omega*t) : 1}).doit()
+	tmp2 = tmp2 - b * y(x)**3
+	tmp2 = tmp2.subs({ x : z }).doit()
+	res_d["tmp2"] = tmp2
+	re_eq = tmp2.subs({ I : 0 }).doit()
+	im_eq = tmp2.coeff(I)
+	res_d["re_eq"] = re_eq
+	res_d["im_eq"] = im_eq
+	qq_re = [ i for i in re_eq.as_terms()[-1] if not i.is_Atom ]
+	qq_im = [ i for i in im_eq.as_terms()[-1] if not i.is_Atom ]
+	res_d["qq_re"] = qq_re
+	res_d["qq_im"] = qq_im
+	im_eq_coeff = [ im_eq.coeff(i) for i in qq_im ]
+	im_eq_sys = [ Eq(i) for i in im_eq_coeff ]
+	res_d["im_eq_coeff"] = im_eq_coeff
+	res_d["im_eq_sys"] = im_eq_sys
+	tt = [ [j for j in i.as_expr().as_ordered_terms()[0].atoms() if j.is_symbol ][0] for i in im_eq_coeff ]
+	tt = list(reversed(tt))
+	eq_num_list = list(reversed(range(0, len(im_eq_sys))))
+	embed()
+	subs_im_d = f_extract_from_eq_sys_(im_eq_sys, tt, eq_num_list)
+	res_d["tt"] = tt
+	res_d["subs_im_d"] = subs_im_d
+	res_d["n"] = n
+	return res_d
 
 
 def f_subs_trav_wave(target_eq = None, params = { }, q = None, y = None, x = None, t = None, q_der_list = [ ], n = None):
@@ -141,6 +204,11 @@ def f_subs_trav_wave(target_eq = None, params = { }, q = None, y = None, x = Non
 	res_d["im_eq_coeff"] = im_eq_coeff
 	res_d["im_eq_sys"] = im_eq_sys
 	tt = [ [j for j in i.as_expr().as_ordered_terms()[0].atoms() if j.is_symbol ][0] for i in im_eq_coeff ]
+	tt = [ C0 ]
+	for eq in im_eq_sys[ 1: ]:
+		lp_tmp = f_line_up_one_param(eq, not_include = tt)
+		tt.append(lp_tmp["line_up_param"])
+	#embed()
 	tt = list(reversed(tt))
 	eq_num_list = list(reversed(range(0, len(im_eq_sys))))
 	subs_im_d = f_extract_from_eq_sys_(im_eq_sys, tt, eq_num_list)
@@ -148,6 +216,7 @@ def f_subs_trav_wave(target_eq = None, params = { }, q = None, y = None, x = Non
 	res_d["subs_im_d"] = subs_im_d
 	res_d["n"] = n
 	return res_d
+
 
 def f_generate_y_subs(n, a, limit = 4):
 	N = Symbol("N")
@@ -199,7 +268,7 @@ def f_subs_R(re_eq = None, subs_im_d = { }, qq_re = [ ], n = None, **kwargs):
 	return res_d
 
 
-def f_line_up_one_param(eq, not_include = [ ]):
+def f_line_up_one_param_old(eq, not_include = [ ]):
 		f_symb = eq.lhs.free_symbols
 		a_symb = [ i for i in f_symb if "a" == i.name[0] and i not in not_include ]
 		pass
@@ -212,7 +281,7 @@ def f_line_up_one_param(eq, not_include = [ ]):
 		line_up_param = min(d_min_, key = lambda x : int(x.name[1:]))
 		return { "f_symb" : f_symb, "a_symb" : a_symb, "d_" : d_, "d_min_" : d_min_, "line_up_param" : line_up_param }
 
-def f_line_up_params(eqs):
+def f_line_up_params_old(eqs):
 		pass
 		line_up_params_list = [ ]
 		new_eqs = eqs[ 1 : -1 ]
