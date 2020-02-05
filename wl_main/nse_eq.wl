@@ -21,6 +21,9 @@ var["f init"] = Function[ {},
 	strexp = "{" <> StringRiffle[coeffliststring, ","] <> "}";
 	coefflist0 = ToExpression[strexp];
 
+	var["coefflist"] = coefflist;
+	var["coefflist0"] = coefflist0;
+
 ];
 
 var["f get y subs"] = Function[ { NN, genlimit },
@@ -34,16 +37,18 @@ var["f get y subs"] = Function[ { NN, genlimit },
 	ysubslist = { { y[z] -> ysubs } };
 
 	For[i = 1, i <= genlimit, i++, ysubslist = Append[ysubslist,
-	{
-	D[y[z], {z, i}] ->
-	Expand[
-	(D[ysubslist[[i]][[1]][[-1]], z]/.(Join@@ysubslist)/.(Join@@var["misc subs"]))
-	]
-	}
-	]
+		{
+			D[y[z], {z, i}] ->
+			Expand
+				[
+					(D[ysubslist[[i]][[1]][[-1]], z]/.(Join@@ysubslist)/.(Join@@var["misc subs"]))
+				]
+		}]
 	];
 
 	yfinalsubs = Join@@(Join[ysubslist, var["misc subs"]]);
+
+	var["yfinalsubs"] = yfinalsubs;
 
 	yfinalsubs
 
@@ -54,6 +59,7 @@ var["f get eq"] = Function[ {NN},
 	eq = -b * Abs[q[x, t]]^2 * q[x, t];
 
 	eq = eq/.{ q[x, t] -> sube };
+	eqr = eq;
 
 	qf = q[x, t]/.{ q[x, t] -> sube };
 
@@ -71,8 +77,19 @@ var["f get eq"] = Function[ {NN},
 
 	eq += eqSuffix;
 
-	eqSuffix0 = Map[(qlist[[#1]] * (I)^Mod[#1, 2] * coefflist[[#1]] * -1)&, Range[1, 2 * NN]];
+	eqSuffix0 = Map[(qlist[[#1]] * (I)^Mod[#1, 2] * coefflist[[#1]] * (-1)^Mod[#1, 2])&, Range[1, 2 * NN]];
 	var["eqSuffix0"] = eqSuffix0;
+
+	var["first sub seq"] = {
+				Im[ ecoeff ] -> 0, 
+				Abs[ y[subez] ] -> y[subez],
+				Exp[ I * ( ecoeff ) ] -> 1,
+				subez -> z
+				};
+
+	eq0 = Total[eqSuffix0] + I * qt + eqr;
+	var["tmp eq"] = Simplify[eq/.(var["first sub seq"][[{1, 2}]])]/.(var["first sub seq"][[{3, 4}]]);
+	var["tmp eq0"] = Simplify[eq0/.(var["first sub seq"][[{1, 2}]])]/.(var["first sub seq"][[{3, 4}]]);
 
 	eq
 
@@ -131,4 +148,46 @@ var["f get re coeffs"] = Function[ { rePart, imsols, yfinalsubs }
 	rec
 ];
 
+var["f get re sols"] = Function[ { rec, ret }
 
+	resols = { {} };
+
+	fres = Function[{i}, Solve[(rec[[i]]/.(Join@@resols)) == 0, ret[[i]]][[1]]];
+
+	For[i = 1, i <= Length[ret], i++, resols = Append[resols, fres[i]]];
+
+	resols
+];
+
+fMain := Function[ {}
+
+	
+	mainNN = 2;
+	(*
+	genlimit = 6;
+	ret = { b, a2, omega };
+	*)
+
+	var["f init"][];
+
+	
+	eq = var["f get eq"][2];
+	(*
+	yfinalsubs = var["f get y subs"][NN, genlimit];
+
+	eqParts = var["f get re and im"][eq];
+	rePart = eqParts[[-1]];
+	imPart = eqParts[[1]];
+
+
+	imsols = var["f get im sols"][];
+	rec = var["f get re coeffs"][rePart, imsols, yfinalsubs];
+
+
+	
+	resols = var["f get re sols"][rec, ret];
+
+	{ imsols, resols }
+	*)
+	
+];
