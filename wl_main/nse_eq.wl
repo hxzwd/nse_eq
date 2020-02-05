@@ -17,7 +17,7 @@ var["f init"] = Function[ {},
 	c0var = C0;
 
 	NN = 4;
-	coeffliststring = Map[(StringTemplate["a``"][#1]])&, Range[1, 4]];
+	coeffliststring = Map[(StringTemplate["a``"][#1])&, Range[1, 4]];
 	strexp = "{" <> StringRiffle[coeffliststring, ","] <> "}";
 	coefflist0 = ToExpression[strexp];
 
