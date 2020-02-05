@@ -71,7 +71,7 @@ var["f get eq"] = Function[ {NN},
 
 	eq += eqSuffix;
 
-	eqSuffix0 = Map[(qlist[[#1]] * (I)^#1 * coefflist[[#1]] * -1)&, Range[1, 2 * NN]];
+	eqSuffix0 = Map[(qlist[[#1]] * (I)^Mod[#1, 2] * coefflist[[#1]] * -1)&, Range[1, 2 * NN]];
 	var["eqSuffix0"] = eqSuffix0;
 
 	eq
