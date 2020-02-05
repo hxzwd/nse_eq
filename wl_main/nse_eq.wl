@@ -7,6 +7,21 @@ sube = sube/.{ z -> subez };
 coefflist = { a1, a2, a3, a4 };
 c0var = C0;
 
+var["f init"] = Function[ {},
+
+	sube = y[z] * Exp[I * (k * x - omega * t)];
+	subez = x + C0 * t;
+	ecoeff = k * x - omega * t;
+	sube = sube/.{ z -> subez };
+	coefflist = { a1, a2, a3, a4 };
+	c0var = C0;
+
+	NN = 4;
+	coeffliststring = Map[(StringTemplate["a``"][#1]])&, Range[1, 4]];
+	strexp = "{" <> StringRiffle[coeffliststring, ","] <> "}";
+	coefflist0 = ToExpression[strexp];
+
+];
 
 var["f get y subs"] = Function[ { NN, genlimit },
 
@@ -42,6 +57,8 @@ var["f get eq"] = Function[ {NN},
 
 	qf = q[x, t]/.{ q[x, t] -> sube };
 
+	qlist = Map[( D @@ { qf, {x, #1} } )&, Range[1, 2 * NN]];
+
 	qt = D @@ { qf, t };
 	qx = D @@ { qf, x };
 	qxx = D @@ { qf, { x, 2 } };
@@ -53,6 +70,9 @@ var["f get eq"] = Function[ {NN},
 	eqSuffix += a4 * qxxxx;
 
 	eq += eqSuffix;
+
+	eqSuffix0 = Map[(qlist[[#1]] * (I)^#1 * coefflist[[#1]] * -1)&, Range[1, 2 * NN]];
+	var["eqSuffix0"] = eqSuffix0;
 
 	eq
 
@@ -75,9 +95,8 @@ var["f get re and im"] = Function[ {eq},
 
 ];
 
-var["f get im sols"] = Function[ { imPart }
+var["f get im sols"] = Function[ { }
 
-	var["im teq3"] = imPart;
 
 	var["im poly"] = var["im teq3"]/.{ D[y[z], { z, p_ }] -> Z^p };
 	var["im exp"] = Exponent[var["im poly"], Z, List];
@@ -98,4 +117,18 @@ var["f get im sols"] = Function[ { imPart }
 	imsols
 
 ];
+
+var["f get re coeffs"] = Function[ { rePart, imsols, yfinalsubs }
+
+	reall = Simplify[rePart/.(Join@@imsols)];
+
+	realls = Simplify[reall/.yfinalsubs];
+	realls = Simplify[realls/.Join@@imsols];
+
+	var["re coeffs"] = Cases[CoefficientList[realls, R[z]], Except[0]];
+	rec = Reverse[var["re coeffs"]];
+
+	rec
+];
+
 
