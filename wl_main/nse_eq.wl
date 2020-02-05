@@ -1,6 +1,6 @@
 
 
-var["f get y subs"] := Function[ { NN_, genlimit_ },
+var["f get y subs"] = Function[ { NN_, genlimit_ },
 
 	ysubs = A * R[z]^NN;
 
