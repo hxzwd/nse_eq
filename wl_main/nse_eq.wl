@@ -53,6 +53,8 @@ fGetYSubs := Function[ { NN, genlimit },
 
 ];
 
+
+
 fGetEq := Function[ {NN, misc},
 
 	sube = misc["sube with subez"];
@@ -203,7 +205,7 @@ fGetReSols := Function[ { rec, ret },
 
 fMain := Function[ {},
 
-	NN = 3;
+	NN = 2;
 	genlimit = 6;
 	genlimit = NN * 2;
 	ret = { b, a2, omega };
