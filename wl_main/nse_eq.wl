@@ -1,38 +1,38 @@
 
 
-sube = y[z] * Exp[I * (k * x - omega * t)];
-subez = x + C0 * t;
-ecoeff = k * x - omega * t;
-sube = sube/.{ z -> subez };
-coefflist = { a1, a2, a3, a4 };
-c0var = C0;
 
-var["f init"] = Function[ {},
+fInit := Function[ {NN}, 
 
-	sube = y[z] * Exp[I * (k * x - omega * t)];
-	subez = x + C0 * t;
-	ecoeff = k * x - omega * t;
-	sube = sube/.{ z -> subez };
-	coefflist = { a1, a2, a3, a4 };
-	c0var = C0;
+	q = <| |>;
 
-	NN = 4;
-	coeffliststring = Map[(StringTemplate["a``"][#1])&, Range[1, 4]];
+	sube = y[z] * Exp[I * (k * x - omega * t)]; q["sube"] = sube;
+	subez = x + C0 * t; q["subez"] = subez;
+	ecoeff = k * x - omega * t; q["ecoeff"] = ecoeff;
+	sube = sube/.{ z -> subez }; q["sube with subez"] = sube;
+	(*coefflist = { a1, a2, a3, a4 };*)
+	c0var = C0; q["c0var"] = C0;
+
+	coeffliststring = Map[(StringTemplate["a``"][#1])&, Range[1, 2 * NN]];
 	strexp = "{" <> StringRiffle[coeffliststring, ","] <> "}";
 	coefflist0 = ToExpression[strexp];
 
-	var["coefflist"] = coefflist;
-	var["coefflist0"] = coefflist0;
+	q["coefflist0"] = coefflist0;
+	q["coefflist"] = coefflist0;
+
+	q
 
 ];
 
-var["f get y subs"] = Function[ { NN, genlimit },
+
+
+fGetYSubs := Function[ { NN, genlimit },
 
 	ysubs = A * R[z]^NN;
 
-	var["rzsq subs"] = { D[R[z], z]^2 -> R[z]^2 * ( 1 - chi * R[z]^2 ) };
-	var["rzz subs"] = { D[R[z], { z, 2 }] -> R[z] - 2 * chi * R[z]^3 };
-	var["misc subs"] = { var["rzsq subs"], var["rzz subs"] };
+	rzsqSubs = { D[R[z], z]^2 -> R[z]^2 * ( 1 - chi * R[z]^2 ) };
+
+	rzzSubs= { D[R[z], { z, 2 }] -> R[z] - 2 * chi * R[z]^3 };
+	miscSubs = { rzsqSubs, rzzSubs };
 
 	ysubslist = { { y[z] -> ysubs } };
 
@@ -41,97 +41,141 @@ var["f get y subs"] = Function[ { NN, genlimit },
 			D[y[z], {z, i}] ->
 			Expand
 				[
-					(D[ysubslist[[i]][[1]][[-1]], z]/.(Join@@ysubslist)/.(Join@@var["misc subs"]))
+					(D[ysubslist[[i]][[1]][[-1]], z]/.(Join@@ysubslist)/.(Join@@miscSubs))
 				]
 		}]
 	];
 
-	yfinalsubs = Join@@(Join[ysubslist, var["misc subs"]]);
+	yfinalsubs = Join@@(Join[ysubslist, miscSubs]);
 
-	var["yfinalsubs"] = yfinalsubs;
 
 	yfinalsubs
 
 ];
 
-var["f get eq"] = Function[ {NN},
+fGetEq := Function[ {NN, misc},
+
+	sube = misc["sube with subez"];
+	ecoeff = misc["ecoeff"];
+	subez = misc["subez"];
+	coefflist = misc["coefflist"];
+	c0var = misc["c0var"];
+
+
+	resEq = <| |>;
+
 
 	eq = -b * Abs[q[x, t]]^2 * q[x, t];
 
+	resEq["eq tail"] = eq;
+
 	eq = eq/.{ q[x, t] -> sube };
 	eqr = eq;
+	resEq["eqr"] = eqr;
 
 	qf = q[x, t]/.{ q[x, t] -> sube };
+	qt = D @@ { qf, t };
 
 	qlist = Map[( D @@ { qf, {x, #1} } )&, Range[1, 2 * NN]];
 
-	qt = D @@ { qf, t };
-	qx = D @@ { qf, x };
-	qxx = D @@ { qf, { x, 2 } };
-	qxxx = D @@ { qf, { x, 3 } };
-	qxxxx = D @@ { qf, { x, 4 } };
-
-	eqSuffix = I * qt - I * a1 * qx;
-	eqSuffix += a2 * qxx - I * a3 * qxxx;
-	eqSuffix += a4 * qxxxx;
-
-	eq += eqSuffix;
+	resEq["qf"] = qf;
+	resEq["qlist"] = qlist;
 
 	eqSuffix0 = Map[(qlist[[#1]] * (I)^Mod[#1, 2] * coefflist[[#1]] * (-1)^Mod[#1, 2])&, Range[1, 2 * NN]];
-	var["eqSuffix0"] = eqSuffix0;
+	resEq["eqSuffix0"] = eqSuffix0;
+	resEq["eqSuffix"] = eqSuffix0;
 
-	var["first sub seq"] = {
+
+	firstSubSeq = {
 				Im[ ecoeff ] -> 0, 
 				Abs[ y[subez] ] -> y[subez],
 				Exp[ I * ( ecoeff ) ] -> 1,
 				subez -> z
 				};
 
+	resEq["firstSubSeq"] = firstSubSeq;
+
 	eq0 = Total[eqSuffix0] + I * qt + eqr;
-	var["tmp eq"] = Simplify[eq/.(var["first sub seq"][[{1, 2}]])]/.(var["first sub seq"][[{3, 4}]]);
-	var["tmp eq0"] = Simplify[eq0/.(var["first sub seq"][[{1, 2}]])]/.(var["first sub seq"][[{3, 4}]]);
+	eq0 = Simplify[eq0]/.{ Im[ omega * t - k * x ] -> 0 };
+	eq0 = Simplify[eq0]/.{ Exp[ I * ( - omega * t + k * x ) ] -> 1 };
+	eq0 = Simplify[eq0]/.{ Exp[ I * (  omega * t - k * x ) ] -> 1 };
+	eq0 = Simplify[eq0]/.{ Abs[ y[subez] ] -> y[subez] };
+	eq0 = Simplify[eq0/.{ subez -> z }];
 
-	eq
+	resEq["eq"] = eq0;
+	resEq["eq0"] = eq0;
 
+	resEq
 ];
 
-var["f get re and im"] = Function[ {eq},
+fGetReAndIm := Function[ {eq, misc},
+
+	sube = misc["sube with subez"];
+	ecoeff = misc["ecoeff"]
+	subez = misc["subez"]
+	coefflist = misc["coefflist"];
+	c0var = misc["c0var"];
+
+
+	q = <| |>;
+
 
 	teq0 = eq/.{ Im[ ecoeff ] -> 0 };
 	teq1 = teq0/.{ Abs[ y[subez] ] -> y[subez] };
 	teq2 = teq1/.{ Exp[ I * ( ecoeff ) ] -> 1 };
 	teq3 = Simplify[teq2]/.{ subez -> z };
 
-	var["teq3 complex expanded"] = ComplexExpand[teq3];
+	teq3CmplxExpanded = ComplexExpand[teq3];
 
-	var["re teq3"] = Simplify[var["teq3 complex expanded"]/.{ I -> 0 }];
-	var["im teq3"] = Simplify[var["teq3 complex expanded"] - var["re teq3"]];
-	var["im teq3"] = Simplify[(ComplexExpand[var["im teq3"]]/.{ I -> 1 }) * -1];
+	q["teq0"] = teq0;
+	q["teq1"] = teq1;
+	q["teq2"] = teq2;
+	q["teq3"] = teq3;
+	q["teq3 complex expanded"] = teq3CmplxExpanded;
 
-	{ var["im teq3"], var["re teq3"] }
+	teq3Re = Simplify[teq3CmplxExpanded/.{ I -> 0 }];
+	teq3Im = Simplify[teq3CmplxExpanded - teq3Re];
+	teq3Im = Simplify[(ComplexExpand[teq3Im]/.{ I -> 1 }) * -1];
 
+	q["re teq3"] = teq3Re;
+	q["im teq3"] = teq3Im;
+
+	q
 ];
 
-var["f get im sols"] = Function[ { }
+fGetImSols := Function[ {teq3Im, misc}
 
+	sube = misc["sube with subez"];
+	ecoeff = misc["ecoeff"]
+	subez = misc["subez"]
+	coefflist = misc["coefflist"];
+	c0var = misc["c0var"];
 
-	var["im poly"] = var["im teq3"]/.{ D[y[z], { z, p_ }] -> Z^p };
-	var["im exp"] = Exponent[var["im poly"], Z, List];
-	var["im coeffs"] = Cases[CoefficientList[var["im poly"], Z], Except[0]];
+	q = <| |>;
 
-	var["im targets"] = Map[(coefflist[[#1]])&, var["im exp"]]/.{ coefflist[[1]] -> c0var };
+	imPoly = teq3Im/.{ D[y[z], { z, p_ }] -> Z^p };
+	imExp = Exponent[imPoly, Z, List];
+	imCoeffs = Cases[CoefficientList[imPoly, Z], Except[0]];
+
+	imTargets = Map[(coefflist[[#1]])&, imExp]/.{ coefflist[[1]] -> c0var };
+
+	q["im poly"] = imPoly;
+	q["im exp"] = imExp;
+	q["im coeffs"] = imCoeffs;
+	q["im targets"] = imTargets
 
 	imsols = { {} };
-	imc = Reverse[var["im coeffs"]];
-	imt = Reverse[var["im targets"]];
+	imc = Reverse[imCoeffs];
+	imt = Reverse[imTargets];
 
 	fims = Function[{i}, Solve[(imc[[i]]/.(Join@@imsols)) == 0, imt[[i]]][[1]]];
-	(*
-	For[i = 1, i <= Length[imt], i++, imsols = Append[imsols, Solve[(imc[[i]]/.(Join@@imsols)) == 0, imt[[i]]][[1]]]];
-	*)
 	For[i = 1, i <= Length[imt], i++, imsols = Append[imsols, fims[i]]];
 
-	imsols
+	q["imsols"] = imsols;
+	q["imc"] = imc;
+	q["imt"] = imt;
+
+	q
 
 ];
 
