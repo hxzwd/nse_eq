@@ -143,11 +143,11 @@ fGetReAndIm := Function[ {eq, misc},
 	q
 ];
 
-fGetImSols := Function[ {teq3Im, misc}
+fGetImSols := Function[ {teq3Im, misc},
 
 	sube = misc["sube with subez"];
-	ecoeff = misc["ecoeff"]
-	subez = misc["subez"]
+	ecoeff = misc["ecoeff"];
+	subez = misc["subez"];
 	coefflist = misc["coefflist"];
 	c0var = misc["c0var"];
 
@@ -162,14 +162,13 @@ fGetImSols := Function[ {teq3Im, misc}
 	q["im poly"] = imPoly;
 	q["im exp"] = imExp;
 	q["im coeffs"] = imCoeffs;
-	q["im targets"] = imTargets
+	q["im targets"] = imTargets;
 
 	imsols = { {} };
 	imc = Reverse[imCoeffs];
 	imt = Reverse[imTargets];
 
-	fims = Function[{i}, Solve[(imc[[i]]/.(Join@@imsols)) == 0, imt[[i]]][[1]]];
-	For[i = 1, i <= Length[imt], i++, imsols = Append[imsols, fims[i]]];
+	For[i = 1, i <= Length[imt], i++, imsols = Append[imsols, Solve[(imc[[i]]/.(Join@@imsols)) == 0, imt[[i]]][[1]]]];
 
 	q["imsols"] = imsols;
 	q["imc"] = imc;
@@ -179,59 +178,53 @@ fGetImSols := Function[ {teq3Im, misc}
 
 ];
 
-var["f get re coeffs"] = Function[ { rePart, imsols, yfinalsubs }
+fGetReCoeffs := Function[ { rePart, imsols, yfinalsubs },
 
-	reall = Simplify[rePart/.(Join@@imsols)];
+	reallp = Simplify[rePart/.(Join@@imsols)];
 
-	realls = Simplify[reall/.yfinalsubs];
+	realls = Simplify[reallp/.yfinalsubs];
 	realls = Simplify[realls/.Join@@imsols];
 
-	var["re coeffs"] = Cases[CoefficientList[realls, R[z]], Except[0]];
-	rec = Reverse[var["re coeffs"]];
+	rrec = Cases[CoefficientList[realls, R[z]], Except[0]];
+	rec = Reverse[rrec];
 
 	rec
 ];
 
-var["f get re sols"] = Function[ { rec, ret }
+fGetReSols := Function[ { rec, ret }, 
 
 	resols = { {} };
 
-	fres = Function[{i}, Solve[(rec[[i]]/.(Join@@resols)) == 0, ret[[i]]][[1]]];
 
-	For[i = 1, i <= Length[ret], i++, resols = Append[resols, fres[i]]];
+	For[i = 1, i <= Length[ret], i++, resols = Append[resols, Solve[(rec[[i]]/.(Join@@resols)) == 0, ret[[i]]][[1]]]];
 
 	resols
 ];
 
-fMain := Function[ {}
+fMain := Function[ {},
 
-	
-	mainNN = 2;
-	(*
+	NN = 2;
 	genlimit = 6;
 	ret = { b, a2, omega };
-	*)
 
-	var["f init"][];
+	misc = fInit[NN];
+	yfinalsubs = fGetYSubs[NN, genlimit];
 
+	resEq = fGetEq[NN, misc];
+
+	tmp0 = fGetReAndIm[resEq["eq"], misc];
+
+	teq3Im = tmp0["im teq3"];
+
+	tmp1 = fGetImSols[teq3Im, misc];
+
+	rePart = tmp0["re teq3"];
+	imsols = tmp1["imsols"];
+
+	rec = fGetReCoeffs[rePart, imsols, yfinalsubs];
+
+	resols = fGetReSols[rec, ret];
 	
-	eq = var["f get eq"][2];
-	(*
-	yfinalsubs = var["f get y subs"][NN, genlimit];
+	resols	
 
-	eqParts = var["f get re and im"][eq];
-	rePart = eqParts[[-1]];
-	imPart = eqParts[[1]];
-
-
-	imsols = var["f get im sols"][];
-	rec = var["f get re coeffs"][rePart, imsols, yfinalsubs];
-
-
-	
-	resols = var["f get re sols"][rec, ret];
-
-	{ imsols, resols }
-	*)
-	
 ];
