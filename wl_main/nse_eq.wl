@@ -203,8 +203,9 @@ fGetReSols := Function[ { rec, ret },
 
 fMain := Function[ {},
 
-	NN = 2;
+	NN = 3;
 	genlimit = 6;
+	genlimit = NN * 2;
 	ret = { b, a2, omega };
 
 	misc = fInit[NN];
@@ -222,6 +223,11 @@ fMain := Function[ {},
 	imsols = tmp1["imsols"];
 
 	rec = fGetReCoeffs[rePart, imsols, yfinalsubs];
+
+	coefflist = misc["coefflist"];
+
+	retPart = Reverse[Map[(coefflist[[#1]])&, Range[2, Length[coefflist] - 1, 2]]];
+	ret = Join[{ b }, retPart, { omega }];
 
 	resols = fGetReSols[rec, ret];
 	
