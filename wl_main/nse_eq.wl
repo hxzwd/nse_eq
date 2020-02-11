@@ -1,4 +1,5 @@
 
+Get["rep_gen.wl"];
 
 
 fInit := Function[ {NN}, 
@@ -203,9 +204,9 @@ fGetReSols := Function[ { rec, ret },
 	resols
 ];
 
-fMain := Function[ {},
+fMain := Function[ {NN},
 
-	NN = 2;
+	(*NN = 2;*)
 	genlimit = 6;
 	genlimit = NN * 2;
 	ret = { b, a2, omega };
@@ -232,7 +233,30 @@ fMain := Function[ {},
 	ret = Join[{ b }, retPart, { omega }];
 
 	resols = fGetReSols[rec, ret];
-	
-	resols	
+
+	mainRes = <| |>;
+
+	mainRes["imsols"] = imsols;
+	mainRes["resols"] = resols;
+	mainRes["re"] = rePart;
+	mainRes["im"] = teq3Im;
+	mainRes["rec"] = rec;
+	mainRes["imc"] = tmp1["imc"];
+	mainRes["N"] = NN;	
+
+	mainRes
+
+];
+
+
+fTest := Function[ { },
+
+	NN = 2;
+	repFileName = "reports/report.tex";
+
+	mainRes = fMain[NN];
+	mainRes["report file name"] = repFileName;
+
+	fRepTest[mainRes];
 
 ];

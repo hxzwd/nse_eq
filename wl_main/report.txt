@@ -1,6 +1,32 @@
-$$\begin{array}{c}
+
+\documentclass[12pt,a4paper,draft]{article}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[utf8]{inputenc}
+%\usepackage[russian]{babel}
+\usepackage[OT1]{fontenc}
+\usepackage{cmap}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{txfonts}
+%\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{imgs/}}
+\linespread{1.5}
+\onehalfspacing
+\begin{document}
+$$
+-i \text{a1} u^{(1,0)}(x,t)+\text{a2} u^{(2,0)}(x,t)-i \text{a3} u^{(3,0)}(x,t)+\text{a4} u^{(4,0)}(x,t)-b u(x,t) \left| u(x,t)\right| ^2+i u^{(0,1)}(x,t)=0
+$$
+$$
+\begin{array}{c}
  u(x,t)\to y(z) e^{i (k x-\omega  t)} \\
  z\to x-\text{C0} t \\
  y(z)\to A R(z)^2 \\
  R'(z)^2=R(z)^2 \left(1-\chi  R(z)^2\right) \\
-\end{array}$$
+\end{array}
+$$
+\end{document}

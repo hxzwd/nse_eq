@@ -6,12 +6,21 @@ tmpResols = Join@@resols;
 
 texForm = TeXForm[TableForm[tmpResols]];
 
+fMakeTexSols := Function[ { ss },
 
+	tmpSS = Join@@ss;
+	texSS = TeXForm[TableForm[tmpSS]];
+	strSS = "$$\n" <> ToString[texSS] <> "\n$$\n";
+
+	strSS
+
+];
 
 fRepHead0 := Function[ { NN },
 
 	RepHead0 = { 
 
+		"N = " <> ToString[NN],
 		u[x, t] -> y[z] * Exp[ I * (k * x - omega * t) ],
 		z -> x - C0 * t,
 		y[z] -> A * R[z]^NN,
@@ -21,6 +30,42 @@ fRepHead0 := Function[ { NN },
 	};
 
 	RepHead0
+
+];
+
+fGetDocHeader := Function[ { },
+
+	docHeader = "
+\\documentclass[12pt,a4paper,draft]{article}
+\\newcommand\\tab[1][1cm]{\\hspace*{#1}}
+\\usepackage[utf8]{inputenc}
+%\\usepackage[russian]{babel}
+\\usepackage[OT1]{fontenc}
+\\usepackage{cmap}
+\\usepackage{amsmath}
+\\usepackage{amsfonts}
+\\usepackage{amssymb}
+%\\usepackage{txfonts}
+%\\usepackage{mathptmx}
+\\usepackage{setspace}
+\\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\\usepackage{graphicx}
+\\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\\graphicspath{{imgs/}}
+\\linespread{1.5}
+\\onehalfspacing
+\\begin{document}
+";
+
+	docHeader
+
+];
+
+fGetDocTail := Function[ { },
+
+	docTail = "\\end{document}";
+
+	docTail
 
 ];
 
@@ -56,25 +101,73 @@ fRepEq := Function[ { NN },
 
 ];
 
+fMakeTex := Function[ {rd},
 
-fRepTest := Function[ {},
+	texData = "$$\n" <> rd <> "\n$$\n";
+
+	texData
+
+];
+
+fRepTest := Function[ {mainRes},
 
 	NN = 2;
+	NN = mainRes["N"];
 
 	repFileName = "report.txt";
+	repFileName = "reports/report.tex";
+	repFileName = ToString[mainRes["report file name"]];
+
+
+	rePart = mainRes["re"];
+	imPart = mainRes["im"];
+	resols = mainRes["resols"];
+	imsols = mainRes["imsols"];
+
+	imSolsStr = fMakeTexSols[imsols];
+	reSolsStr = fMakeTexSols[resols];
+
+	reStr = ToString[TeXForm[rePart == 0]];
+	reStr = fMakeTex[reStr];
+	imStr = ToString[TeXForm[imPart == 0]];
+	imStr = fMakeTex[imStr];
+
 
 	req = fRepEq[NN];
 	repHead0 = fRepHead0[NN];	
+
+	eqStr = ToString[TeXForm[req["eq"] == 0]];
+	eqStr = fMakeTex[eqStr];
 
 	srep = OpenWrite[repFileName];
 
 	repData = TeXForm[TableForm[repHead0]];
 
 	repData = ToString[repData];
+	repData = fMakeTex[repData];
 
-	WriteString[srep, "$$"];
+	docHeader = fGetDocHeader[];
+	docTail = fGetDocTail[];
+
+	WriteString[srep, docHeader];
+
+	WriteString[srep, "Target equation:\n"];
+	WriteString[srep, eqStr];
+	WriteString[srep, "Substitutions:\n"];
 	WriteString[srep, repData];
-	WriteString[srep, "$$"];
+	
+	WriteString[srep, "Imaginary part of equation after substitutions:\n"];
+	WriteString[srep, imStr];
+	WriteString[srep, "Real part of equation after substitutions:\n"];
+	WriteString[srep, reStr];
+
+	WriteString[srep, "Constraints on coefficients from imaginary part of equation:\n"];
+	WriteString[srep, imSolsStr];
+	WriteString[srep, "Constraints on coefficients from real part of equation:\n"];
+	WriteString[srep, reSolsStr];
+
+
+	WriteString[srep, docTail];
 
 	Close[srep];
 
