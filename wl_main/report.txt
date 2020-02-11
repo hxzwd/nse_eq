@@ -1,0 +1,6 @@
+$$\begin{array}{c}
+ u(x,t)\to y(z) e^{i (k x-\omega  t)} \\
+ z\to x-\text{C0} t \\
+ y(z)\to A R(z)^2 \\
+ R'(z)^2=R(z)^2 \left(1-\chi  R(z)^2\right) \\
+\end{array}$$

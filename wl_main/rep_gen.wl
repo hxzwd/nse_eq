@@ -55,3 +55,27 @@ fRepEq := Function[ { NN },
 	req
 
 ];
+
+
+fRepTest := Function[ {},
+
+	NN = 2;
+
+	repFileName = "report.txt";
+
+	req = fRepEq[NN];
+	repHead0 = fRepHead0[NN];	
+
+	srep = OpenWrite[repFileName];
+
+	repData = TeXForm[TableForm[repHead0]];
+
+	repData = ToString[repData];
+
+	WriteString[srep, "$$"];
+	WriteString[srep, repData];
+	WriteString[srep, "$$"];
+
+	Close[srep];
+
+];
