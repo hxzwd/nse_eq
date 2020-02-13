@@ -1,6 +1,10 @@
 
 Get["rep_gen.wl"];
+Get["check_res.wl"];
 
+CLEAR := Function[ {},
+	Clear["Global`*"];
+];
 
 fInit := Function[ {NN}, 
 
@@ -236,6 +240,16 @@ fMain := Function[ {NN},
 
 	mainRes = <| |>;
 
+	mainRes["eq"] = resEq["eq"];
+	mainRes["eq tail"] = resEq["eq tail"];
+	mainRes["eqr"] = resEq["eqr"];
+	mainRes["qf"] = resEq["qf"];
+	mainRes["qlist"] = resEq["qlist"];
+	mainRes["eqSuffix"] = resEq["eqSuffix"];
+	mainRes["firstSubSeq"] = resEq["firstSubSeq"];
+	mainRes["coefflist"] = coefflist;
+
+
 	mainRes["imsols"] = imsols;
 	mainRes["resols"] = resols;
 	mainRes["re"] = rePart;
@@ -243,6 +257,7 @@ fMain := Function[ {NN},
 	mainRes["rec"] = rec;
 	mainRes["imc"] = tmp1["imc"];
 	mainRes["N"] = NN;	
+
 
 	mainRes
 
@@ -259,4 +274,10 @@ fTest := Function[ { },
 
 	fRepTest[mainRes];
 
+	imsols = mainRes["imsols"];
+	resols = mainRes["resols"];
+
+	resCheck = fCheckEq[NN, imsols, resols]
+
 ];
+
