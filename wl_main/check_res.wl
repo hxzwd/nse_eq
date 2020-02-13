@@ -45,7 +45,7 @@ fCheckEq[NN_, imsols_, resols_] := Module[ {
 
 	SIMP3 = Simplify[SIMP2];
 
-	CHRES = <| "res" -> SIMP3, "R" -> R[z], "EQ0" -> EQ0, "EQ1" -> EQ1, "EQ2" -> EQ2, "SIMP0" -> SIMP0, "SIMP1" -> SIMP1, "y" -> y[z] |>;
+	CHRES = <| "res" -> SIMP3, "R" -> R[z], "EQ0" -> EQ0, "EQ1" -> EQ1, "EQ2" -> EQ2, "SIMP0" -> SIMP0, "SIMP1" -> SIMP1, "y" -> y[z], "u" -> u[x, t] |>;
 
 	CHRES
 

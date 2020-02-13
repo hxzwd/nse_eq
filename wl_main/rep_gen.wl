@@ -176,7 +176,8 @@ fRepTest[mainRes_, resCheck_] := Module[ {NN, repFileName, rePart, imPart,
 	WriteString[srep, "y(z) - function:\n"];
 	RTMP = ToString[fMakeTex[ToString[TeXForm[resCheck["y"]]]]];
 	WriteString[srep, RTMP];
-	
+	WriteString[srep, "u(x, t) - function:\n"];
+	WriteString[srep, fMakeTex[ToString[TeXForm[resCheck["u"]]]]];	
 
 	WriteString[srep, docTail];
 
