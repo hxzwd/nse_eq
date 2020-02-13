@@ -6,7 +6,7 @@ tmpResols = Join@@resols;
 
 texForm = TeXForm[TableForm[tmpResols]];
 
-fMakeTexSols := Function[ { ss },
+fMakeTexSols[NN_] := Module[ { tmpSS, strSS },
 
 	tmpSS = Join@@ss;
 	texSS = TeXForm[TableForm[tmpSS]];
@@ -16,7 +16,7 @@ fMakeTexSols := Function[ { ss },
 
 ];
 
-fRepHead0 := Function[ { NN },
+fRepHead0[NN_] := Module[ { RepHead0, u, x, t, k, omega, z, A, R, chi, C0 },
 
 	RepHead0 = { 
 
@@ -33,7 +33,7 @@ fRepHead0 := Function[ { NN },
 
 ];
 
-fGetDocHeader := Function[ { },
+fGetDocHeader[] := Module[ { docHeader },
 
 	docHeader = "
 \\documentclass[12pt,a4paper,draft]{article}
@@ -61,7 +61,7 @@ fGetDocHeader := Function[ { },
 
 ];
 
-fGetDocTail := Function[ { },
+fGetDocTail[] := Module[ { docTail },
 
 	docTail = "\\end{document}";
 
@@ -69,7 +69,8 @@ fGetDocTail := Function[ { },
 
 ];
 
-fRepEq := Function[ { NN }, 
+fRepEq[NN_] := Module[ { req, coeffliststring, strexp, coefflist, eqTail,
+			qt, qlistRep, eqHeadList, eqHead, eq  }, 
 
 
 	req = <| |>;
@@ -101,7 +102,7 @@ fRepEq := Function[ { NN },
 
 ];
 
-fMakeTex := Function[ {rd},
+fMakeTex[rd_] := Module[ {texData},
 
 	texData = "$$\n" <> rd <> "\n$$\n";
 
@@ -109,7 +110,10 @@ fMakeTex := Function[ {rd},
 
 ];
 
-fRepTest := Function[ {mainRes},
+fRepTest[mainRes_] := Module[ {NN, repFileName, rePart, imPart,
+				resols, imsols, imSolsStr, reSolsStr,
+				reStr, imStr, req, repHead0, eqStr,
+				srep, repData, docHeader, docTail},
 
 	NN = 2;
 	NN = mainRes["N"];

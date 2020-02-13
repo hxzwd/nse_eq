@@ -6,7 +6,8 @@ CLEAR := Function[ {},
 	Clear["Global`*"];
 ];
 
-fInit := Function[ {NN}, 
+fInit[NN_] := Module[ {q, sube, subez, ecoeff, c0var,
+			coeffliststring, strexp, coefflist0}, 
 
 	q = <| |>;
 
@@ -30,7 +31,8 @@ fInit := Function[ {NN},
 
 
 
-fGetYSubs := Function[ { NN, genlimit },
+fGetYSubs[NN_, genlimit_] := Module[ { ysubs, rzsqSubs, rzzSubs,
+			miscSubs, ysubslist, yfinalsubs },
 
 	ysubs = A * R[z]^NN;
 
@@ -60,7 +62,9 @@ fGetYSubs := Function[ { NN, genlimit },
 
 
 
-fGetEq := Function[ {NN, misc},
+fGetEq[NN_, misc_] := Module[ {sube, ecoeff, subez, coefflist,
+		c0var, resEq, eq, eqr, qf, qt, qlist, eqSuffix0,
+		firstSubSeq, eq0 },
 
 	sube = misc["sube with subez"];
 	ecoeff = misc["ecoeff"];
@@ -115,7 +119,9 @@ fGetEq := Function[ {NN, misc},
 	resEq
 ];
 
-fGetReAndIm := Function[ {eq, misc},
+fGetReAndIm[eq_, misc_] := Module[ {sube, ecoeff, subez, coefflist, c0var,
+				q, teq0, teq1, teq2, teq3, teq3CmplxExpanded,
+				teq3Re, teq3Im},
 
 	sube = misc["sube with subez"];
 	ecoeff = misc["ecoeff"]
@@ -150,7 +156,9 @@ fGetReAndIm := Function[ {eq, misc},
 	q
 ];
 
-fGetImSols := Function[ {teq3Im, misc},
+fGetImSols[teq3Im_, misc_] := Module[ {sube, ecoeff, subez, coefflist, c0var,
+					q, imPoly, imExp, imCoeffs, imTargets,
+					imsols, imc, imt},
 
 	sube = misc["sube with subez"];
 	ecoeff = misc["ecoeff"];
@@ -185,7 +193,7 @@ fGetImSols := Function[ {teq3Im, misc},
 
 ];
 
-fGetReCoeffs := Function[ { rePart, imsols, yfinalsubs },
+fGetReCoeffs[rePart_, imsols_, yfinalsubs_] := Module[ { reallp, realls, rrec, rec },
 
 	reallp = Simplify[rePart/.(Join@@imsols)];
 
@@ -198,7 +206,7 @@ fGetReCoeffs := Function[ { rePart, imsols, yfinalsubs },
 	rec
 ];
 
-fGetReSols := Function[ { rec, ret }, 
+fGetReSols[rec_, ret_] := Module[ { resols }, 
 
 	resols = { {} };
 
@@ -208,7 +216,9 @@ fGetReSols := Function[ { rec, ret },
 	resols
 ];
 
-fMain := Function[ {NN},
+fMain[NN_] := Module[ {genlimit, ret, misc, yfinalsubs, resEq,
+		tmp0, teq3Im, tmp1, rePart, imsols, rec,
+		coefflist, retPart, resols, mainRes},
 
 	(*NN = 2;*)
 	genlimit = 6;
@@ -264,7 +274,7 @@ fMain := Function[ {NN},
 ];
 
 
-fTest := Function[ { },
+fTest[] := Module[ { NN, repFileName, mainRes, imsols, resols, resCheck},
 
 	NN = 2;
 	repFileName = "reports/report.tex";
@@ -277,7 +287,9 @@ fTest := Function[ { },
 	imsols = mainRes["imsols"];
 	resols = mainRes["resols"];
 
-	resCheck = fCheckEq[NN, imsols, resols]
+	resCheck = fCheckEq[NN, imsols, resols];
+
+	resCheck
 
 ];
 
