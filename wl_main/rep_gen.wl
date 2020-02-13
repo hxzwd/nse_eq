@@ -6,7 +6,7 @@ tmpResols = Join@@resols;
 
 texForm = TeXForm[TableForm[tmpResols]];
 
-fMakeTexSols[NN_] := Module[ { tmpSS, strSS },
+fMakeTexSols[ss_] := Module[ { tmpSS, strSS },
 
 	tmpSS = Join@@ss;
 	texSS = TeXForm[TableForm[tmpSS]];
@@ -16,7 +16,7 @@ fMakeTexSols[NN_] := Module[ { tmpSS, strSS },
 
 ];
 
-fRepHead0[NN_] := Module[ { RepHead0, u, x, t, k, omega, z, A, R, chi, C0 },
+fRepHead0[NN_] := Module[ { RepHead0 },
 
 	RepHead0 = { 
 
@@ -110,10 +110,11 @@ fMakeTex[rd_] := Module[ {texData},
 
 ];
 
-fRepTest[mainRes_] := Module[ {NN, repFileName, rePart, imPart,
+fRepTest[mainRes_, resCheck_] := Module[ {NN, repFileName, rePart, imPart,
 				resols, imsols, imSolsStr, reSolsStr,
 				reStr, imStr, req, repHead0, eqStr,
-				srep, repData, docHeader, docTail},
+				srep, repData, docHeader, docTail,
+				RTMP},
 
 	NN = 2;
 	NN = mainRes["N"];
@@ -127,6 +128,8 @@ fRepTest[mainRes_] := Module[ {NN, repFileName, rePart, imPart,
 	imPart = mainRes["im"];
 	resols = mainRes["resols"];
 	imsols = mainRes["imsols"];
+
+	
 
 	imSolsStr = fMakeTexSols[imsols];
 	reSolsStr = fMakeTexSols[resols];
@@ -170,6 +173,10 @@ fRepTest[mainRes_] := Module[ {NN, repFileName, rePart, imPart,
 	WriteString[srep, "Constraints on coefficients from real part of equation:\n"];
 	WriteString[srep, reSolsStr];
 
+	WriteString[srep, "y(z) - function:\n"];
+	RTMP = ToString[fMakeTex[ToString[TeXForm[resCheck["y"]]]]];
+	WriteString[srep, RTMP];
+	
 
 	WriteString[srep, docTail];
 

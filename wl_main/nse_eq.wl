@@ -1,5 +1,4 @@
 
-Get["rep_gen.wl"];
 Get["check_res.wl"];
 
 CLEAR := Function[ {},
@@ -282,14 +281,17 @@ fTest[] := Module[ { NN, repFileName, mainRes, imsols, resols, resCheck},
 	mainRes = fMain[NN];
 	mainRes["report file name"] = repFileName;
 
-	fRepTest[mainRes];
-
 	imsols = mainRes["imsols"];
 	resols = mainRes["resols"];
 
 	resCheck = fCheckEq[NN, imsols, resols];
 
-	resCheck
+	mainRes["check"] = resCheck;
+
+	fRepTest[mainRes, resCheck];
+
+
+	mainRes
 
 ];
 
