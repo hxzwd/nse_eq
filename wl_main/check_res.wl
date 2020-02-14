@@ -39,7 +39,7 @@ fCheckEq[NN_, imsols_, resols_] := Module[ {
 	y[z_] := A * R[z]^NN;
 
 	SIMP1 = Simplify[SIMP0/.{ R'[z]^2 -> R[z]^2 * (1 - chi * R[z]^2)}];
-	SIMP2 = Simplify[SIMP1/.{ R''[z] -> R[z] - 2 * R[z]^3}];
+	SIMP2 = Simplify[SIMP1/.{ R''[z] -> R[z] - 2 * chi * R[z]^3}];
 
 	R[z_] := 4 * a / ( 4 * a^2 * Exp[z] + chi * Exp[-z]);
 
