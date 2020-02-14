@@ -284,11 +284,14 @@ fTest[] := Module[ { NN, repFileName, mainRes, imsols, resols, resCheck},
 	imsols = mainRes["imsols"];
 	resols = mainRes["resols"];
 
+	fRepTest[mainRes];
+
 	resCheck = fCheckEq[NN, imsols, resols];
 
 	mainRes["check"] = resCheck;
+	resCheck["report file name"] = repFileName;
 
-	fRepTest[mainRes, resCheck];
+	fRepFuncs[resCheck];
 
 
 	mainRes

@@ -110,11 +110,10 @@ fMakeTex[rd_] := Module[ {texData},
 
 ];
 
-fRepTest[mainRes_, resCheck_] := Module[ {NN, repFileName, rePart, imPart,
+fRepTest[mainRes_] := Module[ {NN, repFileName, rePart, imPart,
 				resols, imsols, imSolsStr, reSolsStr,
 				reStr, imStr, req, repHead0, eqStr,
-				srep, repData, docHeader, docTail,
-				RTMP},
+				srep, repData, docHeader, docTail},
 
 	NN = 2;
 	NN = mainRes["N"];
@@ -172,6 +171,18 @@ fRepTest[mainRes_, resCheck_] := Module[ {NN, repFileName, rePart, imPart,
 	WriteString[srep, imSolsStr];
 	WriteString[srep, "Constraints on coefficients from real part of equation:\n"];
 	WriteString[srep, reSolsStr];
+	WriteString[srep, "\n\n"];
+	(*WriteString[srep, docTail];*)
+
+	Close[srep];
+
+];
+
+fRepFuncs[resCheck_] := Module[ {RTMP, srep, repFileName, docTail},
+
+	repFileName = resCheck["report file name"];
+	docTail = fGetDocTail[];
+	srep = OpenAppend[repFileName];
 
 	WriteString[srep, "y(z) - function:\n"];
 	RTMP = ToString[fMakeTex[ToString[TeXForm[resCheck["y"]]]]];
@@ -179,8 +190,10 @@ fRepTest[mainRes_, resCheck_] := Module[ {NN, repFileName, rePart, imPart,
 	WriteString[srep, "u(x, t) - function:\n"];
 	WriteString[srep, fMakeTex[ToString[TeXForm[resCheck["u"]]]]];	
 
+	WriteString[srep, "\n"];
 	WriteString[srep, docTail];
-
+	WriteString[srep, "\n"];
 	Close[srep];
+
 
 ];
