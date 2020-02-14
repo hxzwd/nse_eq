@@ -1,0 +1,63 @@
+
+\documentclass[12pt,a4paper,draft]{article}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[utf8]{inputenc}
+%\usepackage[russian]{babel}
+\usepackage[OT1]{fontenc}
+\usepackage{cmap}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{txfonts}
+%\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{imgs/}}
+\linespread{1.5}
+\onehalfspacing
+\begin{document}
+Target equation:
+\\$
+-i \text{a1} u^{(1,0)}(x,t)+\text{a2} u^{(2,0)}(x,t)-i \text{a3} u^{(3,0)}(x,t)+\text{a4} u^{(4,0)}(x,t)-i \text{a5} u^{(5,0)}(x,t)+\text{a6} u^{(6,0)}(x,t)-b u(x,t) \left| u(x,t)\right| ^2+i u^{(0,1)}(x,t)=0
+$\\
+Substitutions:
+$$
+\begin{array}{c}
+ \text{N = 3} \\
+ u(x,t)\to y(z) e^{i (k x-\omega  t)} \\
+ z\to x-\text{C0} t \\
+ y(z)\to A R(z)^3 \\
+ R'(z)^2=R(z)^2 \left(1-\chi  R(z)^2\right) \\
+\end{array}
+$$
+Imaginary part of equation after substitutions:
+\\$
+y'(z) \left(\text{a1}-2 \text{a2} k-3 \text{a3} k^2+4 \text{a4} k^3+5 \text{a5} k^4-6 \text{a6} k^5-\text{C0}\right)+y^{(3)}(z) \left(\text{a3}-4 \text{a4} k-10 \text{a5} k^2+20 \text{a6} k^3\right)+y^{(5)}(z) (\text{a5}-6 \text{a6} k)=0
+$\\
+Real part of equation after substitutions:
+\\$
+y(z) \left(\text{a1} k-\text{a2} k^2-\text{a3} k^3+\text{a4} k^4+\text{a5} k^5-\text{a6} k^6+\omega \right)+y''(z) \left(\text{a2}+3 \text{a3} k-6 \text{a4} k^2-10 \text{a5} k^3+15 \text{a6} k^4\right)+\text{a4} y^{(4)}(z)+5 \text{a5} k y^{(4)}(z)-15 \text{a6} k^2 y^{(4)}(z)+\text{a6} y^{(6)}(z)-b y(z)^3=0
+$\\
+Constraints on coefficients from imaginary part of equation:
+\\$\text{a5}\to 6 \text{a6} k$\\
+$\text{a3}\to 4 \left(\text{a4} k+10 \text{a6} k^3\right)$\\
+$\text{C0}\to \text{a1}-2 \text{a2} k-8 \text{a4} k^3-96 \text{a6} k^5$\\
+Constraints on coefficients from real part of equation:
+\\$b\to -\frac{20160 \text{a6} \chi ^3}{A^2}$\\
+$\text{a4}\to -\text{a6} \left(15 k^2+83\right)$\\
+$\text{a2}\to 15 \text{a6} k^4+498 \text{a6} k^2+1891 \text{a6}$\\
+$\omega \to -\text{a1} k+5 \text{a6} k^6+249 \text{a6} k^4+1891 \text{a6} k^2-11025 \text{a6}$\\
+
+
+y(z) - function:
+$$
+\frac{64 a^3 A}{\left(4 a^2 e^z+\chi  e^{-z}\right)^3}
+$$
+u(x, t) - function:
+$$
+\frac{64 a^3 A e^{i (k x-\omega  t)}}{\left(4 a^2 e^{\text{C0} t+x}+\chi  e^{-\text{C0} t-x}\right)^3}
+$$
+
+\end{document}
