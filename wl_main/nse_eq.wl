@@ -275,7 +275,7 @@ fMain[NN_] := Module[ {genlimit, ret, misc, yfinalsubs, resEq,
 
 fTest[] := Module[ { NN, repFileName, mainRes, imsols, resols, resCheck},
 
-	NN = 2;
+	NN = 4;
 	repFileName = "reports/report.tex";
 
 	mainRes = fMain[NN];
