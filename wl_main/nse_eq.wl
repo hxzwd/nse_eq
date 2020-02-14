@@ -298,3 +298,28 @@ fTest[] := Module[ { NN, repFileName, mainRes, imsols, resols, resCheck},
 
 ];
 
+
+FRUN[NN_, repfn_] := Module[ { repFileName, mainRes, imsols, resols, resCheck},
+
+	repFileName = "reports/" <> ToString[repfn];
+
+	mainRes = fMain[NN];
+	mainRes["report file name"] = repFileName;
+
+	imsols = mainRes["imsols"];
+	resols = mainRes["resols"];
+
+	fRepTest[mainRes];
+
+	resCheck = fCheckEq[NN, imsols, resols];
+
+	mainRes["check"] = resCheck;
+	resCheck["report file name"] = repFileName;
+
+	fRepFuncs[resCheck];
+
+
+	mainRes
+
+];
+
