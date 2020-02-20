@@ -24,7 +24,7 @@ function ne_go_reports()
 	cd $NSE_EQ_PATH/reports
 }
 
-function ne_pub_report()
+function ne_pub_reports()
 {
 
 	reports_file="$NSE_EQ_PATH/reports.html"

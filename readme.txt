@@ -22,5 +22,6 @@ usage:
 
 ne_run -N 2 -o rep_2.tex
 ne_go_reports
-ne_pub_report
+ne_pub_reports
+
 
