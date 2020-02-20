@@ -1,0 +1,69 @@
+
+\documentclass[12pt,a4paper,draft]{article}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[utf8]{inputenc}
+%\usepackage[russian]{babel}
+\usepackage[OT1]{fontenc}
+\usepackage{cmap}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{txfonts}
+%\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{imgs/}}
+\linespread{1.5}
+\onehalfspacing
+\begin{document}
+Target equation:
+\\$
+-i a_{1} u^{(1,0)}(x,t)+a_{10} u^{(10,0)}(x,t)-i a_{11} u^{(11,0)}(x,t)+a_{12} u^{(12,0)}(x,t)+a_{2} u^{(2,0)}(x,t)-i a_{3} u^{(3,0)}(x,t)+a_{4} u^{(4,0)}(x,t)-i a_{5} u^{(5,0)}(x,t)+a_{6} u^{(6,0)}(x,t)-i a_{7} u^{(7,0)}(x,t)+a_{8} u^{(8,0)}(x,t)-i a_{9} u^{(9,0)}(x,t)-b u(x,t) \left| u(x,t)\right| ^2+i u^{(0,1)}(x,t)=0
+$\\
+Substitutions:
+$$
+\begin{array}{c}
+ \text{N = 6} \\
+ u(x,t)\to y(z) e^{i (k x-\omega  t)} \\
+ z\to x-\text{C0} t \\
+ y(z)\to A R(z)^6 \\
+ R'(z)^2=R(z)^2 \left(1-\chi  R(z)^2\right) \\
+\end{array}
+$$
+Imaginary part of equation after substitutions:
+\\$
+y'(z) \left(a_{1}+k \left(k \left(-10 a_{10} k^7-11 a_{11} k^8+12 a_{12} k^9-3 a_{3}+4 a_{4} k+5 a_{5} k^2-6 a_{6} k^3-7 a_{7} k^4+8 a_{8} k^5+9 a_{9} k^6\right)-2 a_{2}\right)-\text{C0}\right)+y^{(3)}(z) \left(k \left(k \left(120 a_{10} k^5+165 a_{11} k^6-220 a_{12} k^7-10 a_{5}+20 a_{6} k+35 a_{7} k^2-56 a_{8} k^3-84 a_{9} k^4\right)-4 a_{4}\right)+a_{3}\right)-252 a_{10} k^5 y^{(5)}(z)+120 a_{10} k^3 y^{(7)}(z)-10 a_{10} k y^{(9)}(z)-462 a_{11} k^6 y^{(5)}(z)+330 a_{11} k^4 y^{(7)}(z)-55 a_{11} k^2 y^{(9)}(z)+a_{11} y^{(11)}(z)+792 a_{12} k^7 y^{(5)}(z)-792 a_{12} k^5 y^{(7)}(z)+220 a_{12} k^3 y^{(9)}(z)-12 a_{12} k y^{(11)}(z)+a_{5} y^{(5)}(z)-6 a_{6} k y^{(5)}(z)-21 a_{7} k^2 y^{(5)}(z)+a_{7} y^{(7)}(z)+56 a_{8} k^3 y^{(5)}(z)-8 a_{8} k y^{(7)}(z)+126 a_{9} k^4 y^{(5)}(z)-36 a_{9} k^2 y^{(7)}(z)+a_{9} y^{(9)}(z)=0
+$\\
+Real part of equation after substitutions:
+\\$
+y(z) \left(a_{1} k-a_{10} k^{10}-a_{11} k^{11}+a_{12} k^{12}-a_{2} k^2-a_{3} k^3+a_{4} k^4+a_{5} k^5-a_{6} k^6-a_{7} k^7+a_{8} k^8+a_{9} k^9+\omega \right)+y''(z) \left(k \left(45 a_{10} k^7+55 a_{11} k^8-66 a_{12} k^9+3 a_{3}-6 a_{4} k-10 a_{5} k^2+15 a_{6} k^3+21 a_{7} k^4-28 a_{8} k^5-36 a_{9} k^6\right)+a_{2}\right)-210 a_{10} k^6 y^{(4)}(z)+210 a_{10} k^4 y^{(6)}(z)-45 a_{10} k^2 y^{(8)}(z)+a_{10} y^{(10)}(z)-330 a_{11} k^7 y^{(4)}(z)+462 a_{11} k^5 y^{(6)}(z)-165 a_{11} k^3 y^{(8)}(z)+11 a_{11} k y^{(10)}(z)+495 a_{12} k^8 y^{(4)}(z)-924 a_{12} k^6 y^{(6)}(z)+495 a_{12} k^4 y^{(8)}(z)-66 a_{12} k^2 y^{(10)}(z)+a_{12} y^{(12)}(z)+a_{4} y^{(4)}(z)+5 a_{5} k y^{(4)}(z)-15 a_{6} k^2 y^{(4)}(z)+a_{6} y^{(6)}(z)-35 a_{7} k^3 y^{(4)}(z)+7 a_{7} k y^{(6)}(z)+70 a_{8} k^4 y^{(4)}(z)-28 a_{8} k^2 y^{(6)}(z)+a_{8} y^{(8)}(z)+126 a_{9} k^5 y^{(4)}(z)-84 a_{9} k^3 y^{(6)}(z)+9 a_{9} k y^{(8)}(z)-b y(z)^3=0
+$\\
+Constraints on coefficients from imaginary part of equation:
+\\$a_{11}\to 12 a_{12} k$\\
+$a_{9}\to 10 \left(a_{10} k+44 a_{12} k^3\right)$\\
+$a_{7}\to 8 \left(30 a_{10} k^3+1584 a_{12} k^5+a_{8} k\right)$\\
+$a_{5}\to 2 \left(2016 a_{10} k^5+107712 a_{12} k^7+3 a_{6} k+56 a_{8} k^3\right)$\\
+$a_{3}\to 4 k \left(8160 a_{10} k^6+436480 a_{12} k^8+a_{4}+10 a_{6} k^2+224 a_{8} k^4\right)$\\
+$\text{C0}\to a_{1}-79360 a_{10} k^9-4245504 a_{12} k^{11}-2 a_{2} k-8 a_{4} k^3-96 a_{6} k^5-2176 a_{8} k^7$\\
+Constraints on coefficients from real part of equation:
+\\$b\to \frac{2964061900800 a_{12} \chi ^6}{A^2}$\\
+$a_{10}\to -2 \left(33 a_{12} k^2+398 a_{12}\right)$\\
+$a_{8}\to 3 \left(165 a_{12} k^4+11940 a_{12} k^2+82256 a_{12}\right)$\\
+$a_{6}\to -4 \left(231 a_{12} k^6+41790 a_{12} k^4+1727376 a_{12} k^2+9460432 a_{12}\right)$\\
+$a_{4}\to 495 a_{12} k^8+167160 a_{12} k^6+17273760 a_{12} k^4+567625920 a_{12} k^2+3000595456 a_{12}$\\
+$a_{2}\to -6 \left(11 a_{12} k^{10}+5970 a_{12} k^8+1151584 a_{12} k^6+94604320 a_{12} k^4+3000595456 a_{12} k^2+19242909696 a_{12}\right)$\\
+$\omega \to -a_{1} k-11 a_{12} k^{12}-7164 a_{12} k^{10}-1727376 a_{12} k^8-189208640 a_{12} k^6-9001786368 a_{12} k^4-115457458176 a_{12} k^2+1664719257600 a_{12}$\\
+
+
+y(z) - function:
+$$
+\frac{4096 a^6 A}{\left(4 a^2 e^z+\chi  e^{-z}\right)^6}
+$$
+u(x, t) - function:
+$$
+\frac{4096 a^6 A e^{i (k x-\omega  t)}}{\left(4 a^2 e^{\text{C0} t+x}+\chi  e^{-\text{C0} t-x}\right)^6}
+$$
+
+\end{document}

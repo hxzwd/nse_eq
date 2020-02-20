@@ -151,8 +151,13 @@ fRepTest[mainRes_] := Module[ {NN, repFileName, rePart, imPart,
 	reSolsStr = fMakeTexSols[resols];
 	*)
 
+	(*
 	imSolsStr = fMakeTexSols0[imsols];
 	reSolsStr = fMakeTexSols0[resols];
+	*)
+
+	imSolsStr = fMakeTexSols0[Expand[imsols]];
+	reSolsStr = fMakeTexSols0[Expand[resols]];
 
 	reStr = ToString[TeXForm[rePart == 0]];
 	reStr = fMakeTex0[reStr];
