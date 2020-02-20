@@ -20,40 +20,42 @@
 \begin{document}
 Target equation:
 \\$
--i \text{a1} u^{(1,0)}(x,t)+\text{a2} u^{(2,0)}(x,t)-b u(x,t) \left| u(x,t)\right| ^2+i u^{(0,1)}(x,t)=0
+-i \text{a1} u^{(1,0)}(x,t)+\text{a2} u^{(2,0)}(x,t)-i \text{a3} u^{(3,0)}(x,t)+\text{a4} u^{(4,0)}(x,t)-b u(x,t) \left| u(x,t)\right| ^2+i u^{(0,1)}(x,t)=0
 $\\
 Substitutions:
 $$
 \begin{array}{c}
- \text{N = 1} \\
+ \text{N = 2} \\
  u(x,t)\to y(z) e^{i (k x-\omega  t)} \\
  z\to x-\text{C0} t \\
- y(z)\to A R(z) \\
+ y(z)\to A R(z)^2 \\
  R'(z)^2=R(z)^2 \left(1-\chi  R(z)^2\right) \\
 \end{array}
 $$
 Imaginary part of equation after substitutions:
 \\$
-y'(z) (\text{a1}-2 \text{a2} k-\text{C0})=0
+y'(z) \left(\text{a1}-2 \text{a2} k-3 \text{a3} k^2+4 \text{a4} k^3-\text{C0}\right)+y^{(3)}(z) (\text{a3}-4 \text{a4} k)=0
 $\\
 Real part of equation after substitutions:
 \\$
-y(z) \left(\text{a1} k-\text{a2} k^2+\omega \right)+\text{a2} y''(z)-b y(z)^3=0
+y(z) \left(\text{a1} k-\text{a2} k^2-\text{a3} k^3+\text{a4} k^4+\omega \right)+y''(z) (\text{a2}+3 k (\text{a3}-2 \text{a4} k))+\text{a4} y^{(4)}(z)-b y(z)^3=0
 $\\
 Constraints on coefficients from imaginary part of equation:
-\\$\text{C0}\to \text{a1}-2 \text{a2} k$\\
+\\$\text{a3}\to 4 \text{a4} k$\\
+$\text{C0}\to \text{a1}-2 \text{a2} k-8 \text{a4} k^3$\\
 Constraints on coefficients from real part of equation:
-\\$b\to -\frac{2 \text{a2} \chi }{A^2}$\\
-$\omega \to -\text{a1} k+\text{a2} k^2-\text{a2}$\\
+\\$b\to \frac{120 \text{a4} \chi ^2}{A^2}$\\
+$\text{a2}\to -2 \left(3 \text{a4} k^2+10 \text{a4}\right)$\\
+$\omega \to -\text{a1} k-3 \text{a4} k^4-20 \text{a4} k^2+64 \text{a4}$\\
 
 
 y(z) - function:
 $$
-\frac{4 a A}{4 a^2 e^z+\chi  e^{-z}}
+\frac{16 a^2 A}{\left(4 a^2 e^z+\chi  e^{-z}\right)^2}
 $$
 u(x, t) - function:
 $$
-\frac{4 a A e^{i (k x-\omega  t)}}{4 a^2 e^{\text{C0} t+x}+\chi  e^{-\text{C0} t-x}}
+\frac{16 a^2 A e^{i (k x-\omega  t)}}{\left(4 a^2 e^{\text{C0} t+x}+\chi  e^{-\text{C0} t-x}\right)^2}
 $$
 
 \end{document}

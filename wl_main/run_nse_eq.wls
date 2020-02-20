@@ -18,7 +18,9 @@ repFileName = ToString[$ScriptCommandLine[[3]]];
 
 RES = FRUN[NN, repFileName];
 
+(*
 Run["./make_report.sh " <> repFileName];
+*)
 
 
 
