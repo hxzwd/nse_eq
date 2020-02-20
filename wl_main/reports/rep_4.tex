@@ -1,0 +1,65 @@
+
+\documentclass[12pt,a4paper,draft]{article}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[utf8]{inputenc}
+%\usepackage[russian]{babel}
+\usepackage[OT1]{fontenc}
+\usepackage{cmap}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{txfonts}
+%\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{imgs/}}
+\linespread{1.5}
+\onehalfspacing
+\begin{document}
+Target equation:
+\\$
+-i a_{1} u^{(1,0)}(x,t)+a_{2} u^{(2,0)}(x,t)-i a_{3} u^{(3,0)}(x,t)+a_{4} u^{(4,0)}(x,t)-i a_{5} u^{(5,0)}(x,t)+a_{6} u^{(6,0)}(x,t)-i a_{7} u^{(7,0)}(x,t)+a_{8} u^{(8,0)}(x,t)-b u(x,t) \left| u(x,t)\right| ^2+i u^{(0,1)}(x,t)=0
+$\\
+Substitutions:
+$$
+\begin{array}{c}
+ \text{N = 4} \\
+ u(x,t)\to y(z) e^{i (k x-\omega  t)} \\
+ z\to x-\text{C0} t \\
+ y(z)\to A R(z)^4 \\
+ R'(z)^2=R(z)^2 \left(1-\chi  R(z)^2\right) \\
+\end{array}
+$$
+Imaginary part of equation after substitutions:
+\\$
+y'(z) \left(a_{1}-2 a_{2} k-3 a_{3} k^2+4 a_{4} k^3+5 a_{5} k^4-6 a_{6} k^5-7 a_{7} k^6+8 a_{8} k^7-\text{C0}\right)+y^{(3)}(z) \left(a_{3}-4 a_{4} k-10 a_{5} k^2+20 a_{6} k^3+35 a_{7} k^4-56 a_{8} k^5\right)+a_{5} y^{(5)}(z)-6 a_{6} k y^{(5)}(z)-21 a_{7} k^2 y^{(5)}(z)+a_{7} y^{(7)}(z)+56 a_{8} k^3 y^{(5)}(z)-8 a_{8} k y^{(7)}(z)=0
+$\\
+Real part of equation after substitutions:
+\\$
+y(z) \left(a_{1} k-a_{2} k^2-a_{3} k^3+a_{4} k^4+a_{5} k^5-a_{6} k^6-a_{7} k^7+a_{8} k^8+\omega \right)+y''(z) \left(a_{2}+3 a_{3} k-6 a_{4} k^2-10 a_{5} k^3+15 a_{6} k^4+21 a_{7} k^5-28 a_{8} k^6\right)+a_{4} y^{(4)}(z)+5 a_{5} k y^{(4)}(z)-15 a_{6} k^2 y^{(4)}(z)+a_{6} y^{(6)}(z)-35 a_{7} k^3 y^{(4)}(z)+7 a_{7} k y^{(6)}(z)+70 a_{8} k^4 y^{(4)}(z)-28 a_{8} k^2 y^{(6)}(z)+a_{8} y^{(8)}(z)-b y(z)^3=0
+$\\
+Constraints on coefficients from imaginary part of equation:
+\\$a_{7}\to 8 a_{8} k$\\
+$a_{5}\to 2 \left(3 a_{6} k+56 a_{8} k^3\right)$\\
+$a_{3}\to 4 \left(a_{4} k+10 a_{6} k^3+224 a_{8} k^5\right)$\\
+$\text{C0}\to a_{1}-2 a_{2} k-8 a_{4} k^3-96 a_{6} k^5-2176 a_{8} k^7$\\
+Constraints on coefficients from real part of equation:
+\\$b\to \frac{6652800 a_{8} \chi ^4}{A^2}$\\
+$a_{6}\to -4 a_{8} \left(7 k^2+54\right)$\\
+$a_{4}\to 2 \left(35 a_{8} k^4+1620 a_{8} k^2+7752 a_{8}\right)$\\
+$a_{2}\to -4 \left(7 a_{8} k^6+810 a_{8} k^4+23256 a_{8} k^2+106816 a_{8}\right)$\\
+$\omega \to -a_{1} k-7 a_{8} k^8-1080 a_{8} k^6-46512 a_{8} k^4-427264 a_{8} k^2+3686400 a_{8}$\\
+
+
+y(z) - function:
+$$
+\frac{256 a^4 A}{\left(4 a^2 e^z+\chi  e^{-z}\right)^4}
+$$
+u(x, t) - function:
+$$
+\frac{256 a^4 A e^{i (k x-\omega  t)}}{\left(4 a^2 e^{\text{C0} t+x}+\chi  e^{-\text{C0} t-x}\right)^4}
+$$
+
+\end{document}

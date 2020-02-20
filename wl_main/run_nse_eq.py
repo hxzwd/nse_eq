@@ -219,7 +219,7 @@ def f_get_wls_info():
 
 
 def f_get_make_rep_info():
-	default_info_ = "/home/hjk/repos/nse_eq/wl_main/make_report.sh"
+	default_info_ = "/home/hjk/repos/nse_eq/wl_main/make_report.py"
 	info_ = default_info_
 	info_env_var = "BIN_MAKE_REP_NSE_EQ"
 	if info_env_var  in os.environ.keys():
@@ -271,6 +271,8 @@ def f_main():
 	rep_proc = f_build_proc_2(output_rep)
 	rep_proc.set_timeout(timeout = -1)
 	return { "main" : main_proc, "misc" : rep_proc }
+
+
 
 
 if __name__ == "__main__":
