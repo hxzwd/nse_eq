@@ -1,0 +1,1663 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.2.11)  21 FEB 2020 04:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**rep_15.tex
+(./rep_15.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+01E02 (decimal 7682)
+   defining Unicode char U+01E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding OT1 on input line 48.
+))
+
+! LaTeX Error: File `cmap.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: -e
+
+! LaTeX Error: File `-e.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks17
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks18
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+
+! LaTeX Error: File `setspace.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count99
+\Gm@cntv=\count100
+\c@Gm@tempcnt=\count101
+\Gm@bindingoffset=\dimen112
+\Gm@wd@mp=\dimen113
+\Gm@odd@mp=\dimen114
+\Gm@even@mp=\dimen115
+\Gm@layoutwidth=\dimen116
+\Gm@layoutheight=\dimen117
+\Gm@layouthoffset=\dimen118
+\Gm@layoutvoffset=\dimen119
+\Gm@dimlist=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+! Undefined control sequence.
+l.19 \onehalfspacing
+                    
+? 
+No file rep_15.aux.
+\openout1 = `rep_15.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen122
+\scratchbox=\box28
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen123
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (0.9824pt too wide) in paragraph at lines 21--26
+\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 ia[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x
+; t\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 a[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ x; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ia[]u[]\OT1/cmr/m/
+n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 a[]u[]\OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/
+it/12 ia[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) + \OML/cmm
+/m/it/12 a[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) \OMS/cms
+y/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (0.14917pt too wide) in paragraph at lines 21--26
+\OML/cmm/m/it/12 a[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) 
+\OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ia[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+x; t\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 a[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 x; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ia[]u[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 a[]u[]\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m
+/it/12 ia[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) +|
+ []
+
+
+Overfull \hbox (40.91444pt too wide) in paragraph at lines 21--26
+\OML/cmm/m/it/12 a[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) 
+\OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ia[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+x; t\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 a[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 x; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ia[]u[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 a[]u[]\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m
+/it/12 ia[]u[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) \OMS/cmsy
+/m/n/12 ^^@ \OML/cmm/m/it/12 bu\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; t\OT1/cmr/m
+/n/12 ) [][] +|
+ []
+
+
+Overfull \hbox (58.76671pt too wide) in paragraph at lines 34--76
+\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 142506\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 11
+8755\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )
+\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 98280\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 
+2035800\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/1
+2 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 80730\OML/cmm/m/it
+/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 
+k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (67.25273pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 1560780\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 65
+780\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1184040\OML/cmm/m/it/1
+2 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[
+] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 14307150\OML/cmm/m/it/12 a[]y[]\OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12
+ + 53130\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/
+12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (66.66904pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 888030\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 10015005\OML/cmm/m/it/
+12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k
+[] \OT1/cmr/m/n/12 + 42504\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 657800\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OT1/cmr/m/n/12 + 6906900\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (87.89186pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 54627300\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3
+3649\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )
+\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 480700\OML/cmm/m/it/1
+2 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[
+] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4686825\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12
+ ^^@ \OT1/cmr/m/n/12 34597290\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (93.57224pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 26334\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3461
+04\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\O
+ML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3124550\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 21474180\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12
+ ^^@ \OT1/cmr/m/n/12 119759850\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (86.91904pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 20349\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 245157\OML/cmm/m/it/12 
+a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] 
+\OT1/cmr/m/n/12 + 2042975\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 13037895\OML/cmm/m/
+it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/1
+2 k[] \OT1/cmr/m/n/12 + 67863915\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cm
+m/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (81.0441pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 15504\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 170544\OML/cmm/m/it/12 
+a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] 
+\OT1/cmr/m/n/12 + 1307504\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 7726160\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OT1/cmr/m/n/12 + 37442160\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm
+/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (82.01692pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 155117520\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 
+11628\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 
+)\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 116280\OML/cmm/m/it/
+12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k
+[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 817190\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12
+ ^^@ \OT1/cmr/m/n/12 4457400\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (70.26704pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 20058300\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 7
+7558760\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/1
+2 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 8568\OML/cmm/m/it/
+12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k
+[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 77520\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/
+n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 
+^^@ \OT1/cmr/m/n/12 497420\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (11.7794pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 2496144\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 10
+400600\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12
+ )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 37442160\OML/cmm/m/
+it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/1
+2 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 119759850\OML/cmm/m/it/12 a[]y[]\OT1
+/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m
+/n/12 +|
+ []
+
+
+Overfull \hbox (57.54434pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 6188\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 50388\OML/cmm/m/it/12 a[
+]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \O
+T1/cmr/m/n/12 + 293930\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 1352078\OML/cmm/m/it/1
+2 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[
+] \OT1/cmr/m/n/12 + 5200300\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (69.29422pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 17383860\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 51895935\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OT1/cmr/m/n/12 + 4368\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 31824\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OT1/cmr/m/n/12 + 167960\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (52.64223pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 54627300\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3
+003\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 19448\OML/cmm/m/it/12 
+a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] 
+\OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 92378\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@
+ \OT1/cmr/m/n/12 352716\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (19.64204pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 2002\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 11440
+\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML
+/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 48620\OML/cmm/m/it/12 a[]
+y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OM
+S/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 167960\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 
+(\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \
+OT1/cmr/m/n/12 497420\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (6.91934pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 1287\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 6435\OML/cmm/m/it/12 a[]
+y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT
+1/cmr/m/n/12 + 24310\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 75582\OML/cmm/m/it/12 a[
+]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \O
+T1/cmr/m/n/12 + 203490\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (50.6691pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 490314\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 1081575\OML/cmm/m/it/1
+2 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[
+] \OT1/cmr/m/n/12 + 2220075\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 4292145\OML/cmm/m
+/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/
+12 k[] \OT1/cmr/m/n/12 + 792\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (17.04434pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 3432\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 11440\OML/cmm/m/it/12 a[
+]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \O
+T1/cmr/m/n/12 + 31824\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 77520\OML/cmm/m/it/12 a
+[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \
+OT1/cmr/m/n/12 + 170544\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (45.18329pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 346104\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 657800\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OT1/cmr/m/n/12 + 1184040\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 2035800\OML/cmm/m/
+it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/1
+2 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 462\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12
+ ^^@|
+ []
+
+
+Overfull \hbox (6.26729pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 1716\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 5005\
+OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/
+cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 12376\OML/cmm/m/it/12 a[]y
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS
+/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 27132\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT
+1/cmr/m/n/12 54264\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT
+1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (34.0171pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 100947\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 177
+100\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 296010\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 475020\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^
+^@ \OT1/cmr/m/n/12 252\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (32.19766pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 26334\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4250
+4\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OM
+L/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 65780\OML/cmm/m/it/12 a[
+]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \O
+MS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 98280\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 
+(\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \
+OT1/cmr/m/n/12 142506\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (7.91965pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 3876\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 5985\OML/cmm/m/it/12 a[]
+y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT
+1/cmr/m/n/12 + 8855\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\O
+T1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 12650\OML/cmm/m/it/12 a[]
+y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT
+1/cmr/m/n/12 + 17550\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (45.76816pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 23751\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 56\OML/cmm/m/it/12 a[]y
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1
+/cmr/m/n/12 + 120\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1
+/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 220\OML/cmm/m/it/12 a[]y[]\
+OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cm
+r/m/n/12 + 364\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cm
+r/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 560\OML/cmm/m/it/12 a[]y[]\OT1
+/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m
+/n/12 +|
+ []
+
+
+Overfull \hbox (24.8661pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 3276\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 4060\OML/cmm/m/it/12 a[]
+y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OM
+S/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 21\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/
+cmr/m/n/12 36\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr
+/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 55\OML/cmm/m
+/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/
+12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 78\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12
+ ^^@|
+ []
+
+
+Overfull \hbox (1500.1458pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 24\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT
+1/cmr/m/n/12 )\OML/cmm/m/it/12 k \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 26\OML/cm
+m/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/
+it/12 k \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 28\OML/cmm/m/it/12 a[]y[]\OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k \OMS/cmsy/m/n/12 
+^^@ \OT1/cmr/m/n/12 30\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 y[]\
+OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ) +|
+ []
+
+
+Overfull \hbox (1271.4008pt too wide) in paragraph at lines 34--76
+[] \OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ) +|
+ []
+
+
+Overfull \hbox (41.14189pt too wide) in paragraph at lines 34--76
+\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 27405\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 237
+51\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\O
+ML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 20475\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 59
+3775\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )
+\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 17550\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (49.62791pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 475020\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 149
+50\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\O
+ML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 376740\OML/cmm/m/it/12 
+a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] 
+\OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 5852925\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 
+12650\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 
+)\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (60.7941pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 296010\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 4292145\OML/cmm/m/it/1
+2 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[
+] \OT1/cmr/m/n/12 + 10626\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 230230\OML/cmm/m/it
+/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 
+k[] \OT1/cmr/m/n/12 + 3108105\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (82.01692pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 30045015\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 8
+855\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 177100\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2220075\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/
+n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 
+^^@ \OT1/cmr/m/n/12 20030010\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (81.82236pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 7315\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 13459
+6\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OM
+L/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1562275\OML/cmm/m/it/12 
+a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] 
+\OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 13123110\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/
+n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 
+^^@ \OT1/cmr/m/n/12 86493225\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (75.16916pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 5985\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 100947\OML/cmm/m/it/12 a
+[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \
+OT1/cmr/m/n/12 + 1081575\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 8436285\OML/cmm/m/it
+/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 
+k[] \OT1/cmr/m/n/12 + 51895935\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (63.41928pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 4845\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 74613\OML/cmm/m/it/12 a[
+]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \O
+T1/cmr/m/n/12 + 735471\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 5311735\OML/cmm/m/it/1
+2 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[
+] \OT1/cmr/m/n/12 + 30421755\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (70.26704pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 145422675\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 
+3876\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )
+\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 54264\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 490314\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^
+^@ \OT1/cmr/m/n/12 3268760\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (70.26704pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 17383860\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 7
+7558760\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/1
+2 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3060\OML/cmm/m/it/
+12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k
+[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 38760\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/
+n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 
+^^@ \OT1/cmr/m/n/12 319770\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (5.90446pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 1961256\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 96
+57700\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 
+)\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 40116600\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 145422675\OML/cmm/m/it/12 a[]y[]\OT1/
+cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/
+n/12 +|
+ []
+
+
+Overfull \hbox (57.54434pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 2380\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 27132\OML/cmm/m/it/12 a[
+]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \O
+T1/cmr/m/n/12 + 203490\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 1144066\OML/cmm/m/it/1
+2 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[
+] \OT1/cmr/m/n/12 + 5200300\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (69.29422pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 20058300\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 67863915\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OT1/cmr/m/n/12 + 1820\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 18564\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OT1/cmr/m/n/12 + 125970\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (52.64223pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 86493225\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1
+365\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 12376\OML/cmm/m/it/12 
+a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] 
+\OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 75582\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@
+ \OT1/cmr/m/n/12 352716\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (0.22409pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 1352078\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 44
+57400\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 
+)\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 13037895\OML/cmm/m/i
+t/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 34597290\OML/cmm/m/it/12 a[]y[]\OT1/c
+mr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/
+n/12 ^^@|
+ []
+
+
+Overfull \hbox (35.01741pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 1001\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 8008\
+OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/
+cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 43758\OML/cmm/m/it/12 a[]y
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS
+/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 184756\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \O
+T1/cmr/m/n/12 646646\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (1.0444pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 715\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\O
+T1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 5005\OML/cmm/m/it/12 a[]y
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1
+/cmr/m/n/12 + 24310\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\O
+T1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 92378\OML/cmm/m/it/12 a[]
+y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT
+1/cmr/m/n/12 + 293930\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (1.0444pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 495\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\O
+T1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 3003\OML/cmm/m/it/12 a[]y
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1
+/cmr/m/n/12 + 12870\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\O
+T1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 43758\OML/cmm/m/it/12 a[]
+y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT
+1/cmr/m/n/12 + 125970\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (72.73854pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 319770\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 735471\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OT1/cmr/m/n/12 + 1562275\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 3108105\OML/cmm/m/
+it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/1
+2 k[] \OT1/cmr/m/n/12 + 5852925\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm
+/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (61.76692pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 116280\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 245
+157\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 480700\OML/cmm/m/it/12
+ a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[]
+ \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 888030\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^
+^@ \OT1/cmr/m/n/12 1560780\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (44.1421pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 38760\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 7461
+3\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OM
+L/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 134596\OML/cmm/m/it/12 a
+[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \
+OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 230230\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@
+ \OT1/cmr/m/n/12 376740\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (19.66953pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 6188\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 11628\OML/cmm/m/it/12 a[
+]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \O
+T1/cmr/m/n/12 + 20349\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z
+\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 + 33649\OML/cmm/m/it/12 a
+[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \
+OT1/cmr/m/n/12 + 53130\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (39.43573pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 84\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT
+1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 165\OML
+/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm
+/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 286\OML/cmm/m/it/12 a[]y[]\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy
+/m/n/12 ^^@ \OT1/cmr/m/n/12 455\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm
+/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m
+/n/12 680\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n
+/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 969\OML/cmm/m/it
+/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 
+k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (7.43585pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 15\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT
+1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 28\OML/
+cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/
+m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 45\OML/cmm/m/it/12 a[]y[]\OT1/
+cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m
+/n/12 ^^@ \OT1/cmr/m/n/12 66\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/
+12 91\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 
+)\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 120\OML/cmm/m/it/12 
+a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k[] 
+\OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (1129.83957pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 25\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT
+1/cmr/m/n/12 )\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 + 27\OML/cmm/m/it/12 a[]y[]\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 k \OT1/cmr/m/
+n/12 + 29\OML/cmm/m/it/12 a[]y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n
+/12 )\OML/cmm/m/it/12 k \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 by\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )[] + [] \OML/cmm/m/it/12 y\OT1/cmr/m/n/12 
+(\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ) +|
+ []
+
+
+Overfull \hbox (1220.06926pt too wide) in paragraph at lines 34--76
+[] \OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ) +|
+ []
+
+
+Overfull \hbox (24.17104pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 20\OML/cmm/m/it/12 a[]k
+ \OT1/cmr/m/n/12 + 3080\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 680064\OML/cmm
+/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 178921600\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n
+/12 + 54813158400\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 19326701721600\OML/c
+mm/m/it/12 a[]k[]$ |
+ []
+
+
+Overfull \hbox (21.55995pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 18\OML/cmm/m/it/12 a[]k
+ \OT1/cmr/m/n/12 + 2280\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 421344\OML/cmm
+/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 94140288\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/
+12 + 24796428800\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 7597393090560\OML/cmm
+/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (21.55995pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 16\OML/cmm/m/it/12 a[]k
+ \OT1/cmr/m/n/12 + 1632\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 248064\OML/cmm
+/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 46387968\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/
+12 + 10376351744\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 2733453598720\OML/cmm
+/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (9.81007pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 14\OML/cmm/m/it/12 a[]k
+ \OT1/cmr/m/n/12 + 1120\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 137088\OML/cmm
+/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 21085440\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/
+12 + 3947525120\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 883115778048\OML/cmm/m
+/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (89.44339pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 55834388004864\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 1470873
+3593681920\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 4506686150828359680\OML/cmm
+/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 1589047253724207513600\OML/cmm/m/it/12 a[]k[]
+$ |
+ []
+
+
+Overfull \hbox (80.95737pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 11126417899520\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 2489170
+300469248\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 655734757395660800\OML/cmm/m
+/it/12 a[]k[] \OT1/cmr/m/n/12 + 200914020585819340800\OML/cmm/m/it/12 a[]k[] \O
+T1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (38.05989pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 240\OML/cmm/m/it/12 a[]
+k[] \OT1/cmr/m/n/12 + 12672\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 933504\OML
+/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 90787840\OML/cmm/m/it/12 a[]k[] \OT1/cmr/
+m/n/12 + 11259076608\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 1733987205120\OML
+/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (110.33206pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 324674387017728\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 726352
+34665365504\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 19134668627220889600\OML/c
+mm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 5862771754821054627840\OML/cmm/m/it/12 a[]k
+[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (86.8323pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 29515853365248\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 5526593
+941929984\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 1236393972835811328\OML/cmm/
+m/it/12 a[]k[] \OT1/cmr/m/n/12 + 325709541934503034880\OML/cmm/m/it/12 a[]k[] \
+OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (0.86421pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 32640\OML/cmm/m/it/12 a
+[]k[] \OT1/cmr/m/n/12 + 1745920\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 128780
+288\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 12526223360\OML/cmm/m/it/12 a[]k[]
+ \OT1/cmr/m/n/12 + 1553465966592\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (110.33206pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 239246490992640\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 447968
+83073761280\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 10021832059523170304\OML/c
+mm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 2640102104917816115200\OML/cmm/m/it/12 a[]k
+[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (29.78142pt too wide) in paragraph at lines 34--76
+[] \OMS/cmsy/m/n/12 ! \OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12
+ 79360\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4245504\OML/
+cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 313155584\OML/cmm/m/it/
+12 a[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 30460116992\OML/cmm/m/it/12 a[]k
+[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3777576173568\OML/cmm/m/it/12 a[]k[] \O
+MS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (71.0949pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 6419958484945407574016\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 
+^^@ \OT1/cmr/m/n/12 1967044844910430876860416\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/
+m/n/12 ^^@ \OT1/cmr/m/n/12 693575525634287935244206080\OML/cmm/m/it/12 a[]k[] \
+OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (54.21054pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 5852925\OML/cmm/m/it/12
+ a[]k[] \OT1/cmr/m/n/12 + 5174523900\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 1
+287492938550\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 90176262777900\OML/cmm/m/
+it/12 a[]k[] \OT1/cmr/m/n/12 + 838048249054965\OML/cmm/m/it/12 a[]$ |
+ []
+
+
+Overfull \hbox (6.41798pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 86493225\OML/cmm/m/it/1
+2 a[]k[] \OT1/cmr/m/n/12 + 180245915850\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 
++ 134543012078475\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 43975957481355900\OM
+L/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (32.52954pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! ^^@\OT1/cmr/m/n/12 145422675\OML/cmm/m/
+it/12 a[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 417842804925\OML/cmm/m/it/12 
+a[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 457446241066815\OML/cmm/m/it/12 a[]
+k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 240297196237409025\OML/cmm/m/it/12 a[]
+k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (11.3452pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 62529294006738103545\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^^
+@ \OT1/cmr/m/n/12 7451951018086000164375\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/1
+2 ^^@ \OT1/cmr/m/n/12 318947670524581324429365\OML/cmm/m/it/12 a[]k[] \OMS/cmsy
+/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (26.66798pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 145422675\OML/cmm/m/it/
+12 a[]k[] \OT1/cmr/m/n/12 + 551001501000\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12
+ + 831720438303300\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 640792523299757400\
+OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (28.38632pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 267982688600306158050\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 
+59615608144688001315000\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 63789534104916
+26488587300\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (30.90466pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! ^^@\OT1/cmr/m/n/12 86493225\OML/cmm/m/i
+t/12 a[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 417842804925\OML/cmm/m/it/12 a
+[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 831720438303300\OML/cmm/m/it/12 a[]k
+[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 883516963943604900\OML/cmm/m/it/12 a[]k
+[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (44.96996pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 541920548058396897390\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^
+^@ \OT1/cmr/m/n/12 193750726470236004273750\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/
+n/12 ^^@ \OT1/cmr/m/n/12 38698984023649200697429620\OML/cmm/m/it/12 a[]k[] \OMS
+/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (119.9966pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 3863228932568831147732728500\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m
+/n/12 ^^@ \OT1/cmr/m/n/12 148834154959808045778734585265\OML/cmm/m/it/12 a[]k[]
+ \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 952652729902915182635946738325\OML/cmm/m/
+it/12 a[]$ |
+ []
+
+
+Overfull \hbox (20.79305pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 30045015\OML/cmm/m/it/1
+2 a[]k[] \OT1/cmr/m/n/12 + 180245915850\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 
++ 457446241066815\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 640792523299757400\O
+ML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (48.63632pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 541920548058396897390\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 
+284167732156346139601500\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 9121903377003
+0258786798390\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (163.50992pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 16998207303302857050024005400\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m
+/n/12 + 1637175704557888503566080437915\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 
++ 62875080173592402053972484729450\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (14.90472pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! ^^@\OT1/cmr/m/n/12 5852925\OML/cmm/m/it
+/12 a[]k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 42689822175\OML/cmm/m/it/12 a[]
+k[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 134543012078475\OML/cmm/m/it/12 a[]k[]
+ \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 240297196237409025\OML/cmm/m/it/12 a[]k[]
+ \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (53.47008pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 267982688600306158050\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^
+^@ \OT1/cmr/m/n/12 193750726470236004273750\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/
+n/12 ^^@ \OT1/cmr/m/n/12 91219033770030258786798390\OML/cmm/m/it/12 a[]k[] \OMS
+/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (169.96855pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 27318547451736734544681437250\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/
+m/n/12 ^^@ \OT1/cmr/m/n/12 4911527113673665510698241313745\OML/cmm/m/it/12 a[]k
+[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 471563101301943015404793635470875\OML/c
+mm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (41.1365pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 62529294006738103545\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 5
+9615608144688001315000\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 386989840236492
+00697429620\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (173.63492pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 16998207303302857050024005400\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m
+/n/12 + 4911527113673665510698241313745\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 
++ 880251122430293628755614786212300\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (10.44034pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 87278763945660915769430530753137990\OML/cmm/m/it/12 a[]k[] \OT1
+/cmr/m/n/12 + 3730399805850411429395847108855280620\OML/cmm/m/it/12 a[]k[] \OT1
+/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (24.09538pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 6130322941837068975\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^^@
+ \OT1/cmr/m/n/12 7451951018086000164375\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m/n/12
+ ^^@ \OT1/cmr/m/n/12 6378953410491626488587300\OML/cmm/m/it/12 a[]k[] \OMS/cmsy
+/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (172.59373pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 3863228932568831147732728500\OML/cmm/m/it/12 a[]k[] \OMS/cmsy/m
+/n/12 ^^@ \OT1/cmr/m/n/12 1637175704557888503566080437915\OML/cmm/m/it/12 a[]k[
+] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 471563101301943015404793635470875\OML/cm
+m/m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (10.82947pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 87278763945660915769430530753137990\OML/cmm/m/it/12 a[]k[] \OMS
+/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 9325999514626028573489617772138201550\OML/cmm/
+m/it/12 a[]k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Overfull \hbox (31.35678pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 455157903961839394042172138614307417865\OML/cmm/m/it/12 a[]k[] 
+\OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4630661692484083313035746144957742083825\O
+ML/cmm/m/it/12 a[]$ |
+ []
+
+
+Overfull \hbox (56.36385pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 435\OML/cmm/m/it/12 a[]
+k[] \OT1/cmr/m/n/12 + 5191830\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 27988976
+925\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 90176262777900\OML/cmm/m/it/12 a[]
+k[] \OT1/cmr/m/n/12 + 193589145531696915\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12
+ +|
+ []
+
+
+Overfull \hbox (58.76132pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 292233373258274516250\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 
+318947670524581324429365\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 2547183911583
+84471279081000\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (201.38474pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 148834154959808045778734585265\OML/cmm/m/it/12 a[]k[] \OT1/cmr/
+m/n/12 + 62875080173592402053972484729450\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/1
+2 + 18702592274070196236306542304243855\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 
++|
+ []
+
+
+Overfull \hbox (33.9401pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 3730399805850411429395847108855280620\OML/cmm/m/it/12 a[]k[] \O
+T1/cmr/m/n/12 + 455157903961839394042172138614307417865\OML/cmm/m/it/12 a[]k[] 
+\OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (54.66197pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 27783970154904499878214476869746452502950\OML/cmm/m/it/12 a[]k[
+] \OT1/cmr/m/n/12 + 422939763786947441219143966710178037769375\OML/cmm/m/it/12 
+a[]$ |
+ []
+
+
+Overfull \hbox (59.72227pt too wide) in paragraph at lines 34--76
+\OML/cmm/m/it/12 ! \OMS/cmsy/m/n/12 ! ^^@\OML/cmm/m/it/12 a[]k \OT1/cmr/m/n/12 
++ 29\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 370845\OML/cmm/m/it/12 a[]k[] \OT
+1/cmr/m/n/12 + 2152998225\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 751468856482
+5\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 17599013230154265\OML/cmm/m/it/12 a[
+]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (41.1365pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 29223337325827451625\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 3
+5438630058286813825485\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 + 318397988947980
+58909885125\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (193.88492pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 21262022137115435111247797895\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m
+/n/12 + 10479180028932067008995414121575\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12
+ + 3740518454814039247261308460848771\OML/cmm/m/it/12 a[]k[] \OT1/cmr/m/n/12 +|
+
+ []
+
+
+Overfull \hbox (28.06516pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 932599951462602857348961777213820155\OML/cmm/m/it/12 a[]k[] \OT
+1/cmr/m/n/12 + 151719301320613131347390712871435805955\OML/cmm/m/it/12 a[]k[] \
+OT1/cmr/m/n/12 +|
+ []
+
+
+Overfull \hbox (75.25923pt too wide) in paragraph at lines 34--76
+\OT1/cmr/m/n/12 13891985077452249939107238434873226251475\OML/cmm/m/it/12 a[]k[
+] \OT1/cmr/m/n/12 + 422939763786947441219143966710178037769375\OML/cmm/m/it/12 
+a[]k[] \OMS/cmsy/m/n/12 ^^@|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--76
+
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
+(./rep_15.aux) ) 
+Here is how much of TeX's memory you used:
+ 3357 strings out of 494953
+ 42090 string characters out of 6180977
+ 149494 words of memory out of 5000000
+ 6590 multiletter control sequences out of 15000+600000
+ 8285 words of font info for 32 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 37i,23n,24p,6742b,117s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on rep_15.pdf (6 pages, 88170 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
