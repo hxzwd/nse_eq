@@ -28,3 +28,13 @@ ne_go_reports
 ne_pub_reports
 
 
+machine:
+
+cpu: Intel(R) Xeon(R) CPU E5645  @ 2.40GHz
+cpu MHz: 2395.000
+cpu width: 64 bits
+cpu vendor: Intel Corp.
+cpu cores: 6
+cpu cores available: 1
+
+memory total: 1048576 kB

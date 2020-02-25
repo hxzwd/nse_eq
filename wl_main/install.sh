@@ -24,6 +24,28 @@ function ne_go_reports()
 	cd $NSE_EQ_PATH/reports
 }
 
+function ne_gen_machine_info()
+{
+	CURR=$(pwd)
+	cd $NSE_EQ_PATH
+	#lshw -quiet -html > machine_info.html
+	lshw -html -quiet 2> /dev/null > machine_info.html
+	#> /dev/null 2> /dev/null
+	weasyprint machine_info.html machine_info.pdf 2> /dev/null
+	#-q > /dev/null 2> /dev/null
+	TMP=$(pwd machine_info.pdf)
+	cd $CURR
+	echo $TMP
+}
+
+function ne_web()
+{
+	TMP=$(hostname -A)/reports.html
+	TMP=$(echo $TMP | tr -d " ")
+	echo $TMP
+
+}
+
 function ne_pub_reports()
 {
 
@@ -42,6 +64,15 @@ function ne_pub_reports()
 		echo "<a href = \"reports/$(basename $rep)\">$(basename $rep)</a>" >> $reports_file
 		echo "<br>" >> $reports_file
 	done
+
+	echo "<br>" >> $reports_file
+	echo "<hr>" >> $reports_file
+	M_INFO_PATH=$(ne_gen_machine_info)
+	M_INFO=$M_INFO_PATH/machine_info.pdf
+	echo "copy machine info: $M_INFO > $NSE_EQ_PUB_REP/$(basename $M_INFO)"
+	cp $M_INFO $NSE_EQ_PUB_REP/$(basename $M_INFO)
+	echo "<a href = \"reports/$(basename $M_INFO)\">$(basename $M_INFO)</a>" >> $reports_file
+	echo "<br>" >> $reports_file
 
 	echo "<hr>" >> $reports_file
 	echo "</body>" >> $reports_file
