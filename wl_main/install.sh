@@ -61,8 +61,15 @@ function ne_pub_reports()
 	do
 		echo "copy report: $rep -> $NSE_EQ_PUB_REP/$(basename $rep)"
 		cp $rep $NSE_EQ_PUB_REP/$(basename $rep)
-		echo "<a href = \"reports/$(basename $rep)\">$(basename $rep)</a>" >> $reports_file
-		echo "<br>" >> $reports_file
+		echo "<pre>" >> $reports_file
+		echo -n "<a href = \"reports/$(basename $rep)\">$(basename $rep)</a>" >> $reports_file
+		rep2=$(echo $rep | cut -d "." -f1)".tex"
+		echo "copy report .tex: $rep2 -> $NSE_EQ_PUB_REP/$(basename $rep2)"
+		cp $rep2 $NSE_EQ_PUB_REP/$(basename $rep2)
+		echo -n -e "\t\t" >> $reports_file
+		echo "<a href = \"reports/$(basename $rep2)\">TEX FILE: $(basename $rep2)</a>" >> $reports_file
+		echo "</pre>" >> $reports_file
+		#echo "<br>" >> $reports_file
 	done
 
 	echo "<br>" >> $reports_file

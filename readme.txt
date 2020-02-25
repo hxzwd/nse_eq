@@ -26,7 +26,8 @@ usage:
 ne_run -N 2 -o rep_2.tex
 ne_go_reports
 ne_pub_reports
-
+ne_web
+ne_gen_machine_info
 
 machine:
 
